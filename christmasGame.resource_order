@@ -22,6 +22,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"toy_objects","order":3,"path":"folders/Objects/toy_objects.yy",},
+    {"name":"control_objects","order":4,"path":"folders/Objects/control_objects.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"setting_manager_scr","order":3,"path":"scripts/setting_manager_scr/setting_manager_scr.yy",},
@@ -39,7 +40,9 @@
     {"name":"toy_train_spr","order":4,"path":"sprites/toy_train_spr/toy_train_spr.yy",},
     {"name":"toy_train_obj","order":3,"path":"objects/toy_train_obj/toy_train_obj.yy",},
     {"name":"rocking_horse_spr","order":2,"path":"sprites/rocking_horse_spr/rocking_horse_spr.yy",},
+    {"name":"toy_parent","order":5,"path":"objects/toy_parent/toy_parent.yy",},
     {"name":"save_manager_scr","order":2,"path":"scripts/save_manager_scr/save_manager_scr.yy",},
+    {"name":"timer_obj","order":1,"path":"objects/timer_obj/timer_obj.yy",},
     {"name":"presents_2_spr","order":3,"path":"sprites/presents_2_spr/presents_2_spr.yy",},
     {"name":"doll_spr","order":1,"path":"sprites/doll_spr/doll_spr.yy",},
     {"name":"window_day_spr","order":3,"path":"sprites/window_day_spr/window_day_spr.yy",},

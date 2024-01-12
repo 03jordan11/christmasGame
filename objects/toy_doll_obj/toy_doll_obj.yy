@@ -9,7 +9,10 @@
     "name": "toy_objects",
     "path": "folders/Objects/toy_objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "toy_parent",
+    "path": "objects/toy_parent/toy_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

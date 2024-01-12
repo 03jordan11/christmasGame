@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "toy_rocking_horse_obj",
-  "eventList": [],
+  "name": "timer_obj",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "toy_objects",
-    "path": "folders/Objects/toy_objects.yy",
+    "name": "control_objects",
+    "path": "folders/Objects/control_objects.yy",
   },
-  "parentObjectId": {
-    "name": "toy_parent",
-    "path": "objects/toy_parent/toy_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "rocking_horse_spr",
-    "path": "sprites/rocking_horse_spr/rocking_horse_spr.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
