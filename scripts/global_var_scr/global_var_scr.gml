@@ -7,6 +7,8 @@ global.checkedTime = 0
 //player
 global.playerName = 0
 global.buffs = []
+  /*represents the conveyeer they are at*/
+global.location = 0
 
 //settings
 global.difficulty = 0
@@ -20,6 +22,8 @@ global.musicVol = 100
 
 global.conveyerOn = false
 
-global.elfAnim = ""
+global.elfAnim = "idle"
 
 global.spriteSpeed = 10
+
+global.playerIsWrapping = false
