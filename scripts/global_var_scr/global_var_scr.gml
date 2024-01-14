@@ -9,6 +9,10 @@ global.playerName = 0
 global.buffs = []
   /*represents the conveyeer they are at*/
 global.location = 0
+global.playerIsWrapping = false
+global.wrappingTimesPressed = 0
+global.elfAnim = "idle"
+global.playerCanMove = true
 
 //settings
 global.difficulty = 0
@@ -22,8 +26,6 @@ global.musicVol = 100
 
 global.conveyerOn = false
 
-global.elfAnim = "idle"
-
 global.spriteSpeed = 10
 
-global.playerIsWrapping = false
+global.toysOnBelt = ds_list_create()
