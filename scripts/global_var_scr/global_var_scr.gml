@@ -29,3 +29,8 @@ global.conveyerOn = false
 global.spriteSpeed = 10
 
 global.toysOnBelt = ds_list_create()
+
+//strings
+
+global.mainMenuStartText = "Start"
+global.mainMenuExitText = "Exit"
