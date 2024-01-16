@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-self.x = self.x + 2
 
-
+//if at the end of the conveyor
+if (self.x >= 500){
+	self.sprite_index = wrapping_spr
+	image_blend = make_color_rgb(128, 128, 128)
+	
+}
+else{
+	self.x += 2
+}
 
