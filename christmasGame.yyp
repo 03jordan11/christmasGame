@@ -48,6 +48,7 @@
     {"id":{"name":"setting_manager_scr","path":"scripts/setting_manager_scr/setting_manager_scr.yy",},},
     {"id":{"name":"main_menu_primary_text_spr","path":"sprites/main_menu_primary_text_spr/main_menu_primary_text_spr.yy",},},
     {"id":{"name":"toy_teddy_obj","path":"objects/toy_teddy_obj/toy_teddy_obj.yy",},},
+    {"id":{"name":"santasWorkshopGui_obj","path":"objects/santasWorkshopGui_obj/santasWorkshopGui_obj.yy",},},
     {"id":{"name":"teddy_bear_spr","path":"sprites/teddy_bear_spr/teddy_bear_spr.yy",},},
     {"id":{"name":"presents_1_spr","path":"sprites/presents_1_spr/presents_1_spr.yy",},},
     {"id":{"name":"toy_doll_obj","path":"objects/toy_doll_obj/toy_doll_obj.yy",},},

@@ -8,3 +8,7 @@ function listToArray(list){
 	}
 	return arr
 }
+
+function startTimer(){
+	global.timerStart = current_time
+}

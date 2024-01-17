@@ -29,6 +29,7 @@
     {"name":"setting_manager_scr","order":3,"path":"scripts/setting_manager_scr/setting_manager_scr.yy",},
     {"name":"main_menu_primary_text_spr","order":16,"path":"sprites/main_menu_primary_text_spr/main_menu_primary_text_spr.yy",},
     {"name":"toy_teddy_obj","order":4,"path":"objects/toy_teddy_obj/toy_teddy_obj.yy",},
+    {"name":"santasWorkshopGui_obj","order":2,"path":"objects/santasWorkshopGui_obj/santasWorkshopGui_obj.yy",},
     {"name":"teddy_bear_spr","order":3,"path":"sprites/teddy_bear_spr/teddy_bear_spr.yy",},
     {"name":"presents_1_spr","order":2,"path":"sprites/presents_1_spr/presents_1_spr.yy",},
     {"name":"toy_doll_obj","order":1,"path":"objects/toy_doll_obj/toy_doll_obj.yy",},

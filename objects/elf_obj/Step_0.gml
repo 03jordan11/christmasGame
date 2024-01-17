@@ -5,24 +5,50 @@ if(global.playerCanMove){
 	playerMovement(self)
 }
 
-
-if(keyboard_check_released(vk_space)){
-	//check that they are above a present
-	wrapPresent(self)
-
+//TODO REFACTOR THIS GARBAGE
+//add where you cant just continously hold it down and wrap everything
+//add where there is no anim when you aren't pressing space
+if(keyboard_check(vk_space) && (isToyBelow(self) || global.playerIsWrapping)){
+	global.elfAnim = "wrapping"
+	if(!global.playerIsWrapping){
+		wrapPresent(self)
+	}
+	if (global.spaceHeldStart == -1){
+		global.spaceHeldStart = current_time
+	}
+	else{
+		global.timeSpaceHeld += (current_time - global.spaceHeldStart) / 1000
+		global.spaceHeldStart = current_time
+		wrapPresent(self)
+	}
+}
+else{
+	if (global.spaceHeldStart != -1){
+		global.elfAnim = ""
+		global.spaceHeldStart = current_time
+	}
 }
 
 
 
 if (global.elfAnim == ""){
+	if (self.sprite_index != elf_idle_spr){
+		self.sprite_index = elf_wrapping_spr
+	}
 	image_index = 0
 	image_speed = 0
 }
 
 if (global.elfAnim == "idle"){
+	if (self.sprite_index != elf_idle_spr){
+		self.sprite_index = elf_idle_spr
+	}
 	image_speed = 1
 }
 
 if (global.elfAnim == "wrapping"){
-
+	if (self.sprite_index != elf_wrapping_spr){
+		self.sprite_index = elf_wrapping_spr
+	}
+	image_speed = 1
 }
