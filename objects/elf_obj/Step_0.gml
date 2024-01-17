@@ -6,8 +6,10 @@ if(global.playerCanMove){
 }
 
 //TODO REFACTOR THIS GARBAGE
-//add where you cant just continously hold it down and wrap everything
-//add where there is no anim when you aren't pressing space
+/**add where you cant just continously hold it down and wrap everything
+   add where there is no anim when you aren't pressing space
+   add back tapping, set it to default, make it changeable in settings
+ **/
 if(keyboard_check(vk_space) && (isToyBelow(self) || global.playerIsWrapping)){
 	global.elfAnim = "wrapping"
 	if(!global.playerIsWrapping){
