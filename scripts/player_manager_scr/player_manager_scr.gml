@@ -33,7 +33,7 @@ function wrapPresent(player){
 			instance_destroy(toy)
 		}
 	}else{
-		if(global.timeSpaceHeld >= 3){
+		if(global.timeSpaceHeld >= 1){
 			global.score+=50
 			global.playerCanMove = true
 			global.playerIsWrapping = false
