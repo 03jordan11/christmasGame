@@ -40,7 +40,9 @@ function wrapPresent(player){
 			global.elfAnim = "idle"
 			global.timeSpaceHeld = 0
 			global.spaceHeldStart = -1
-			instance_destroy(smoke_obj)	
+			instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
+			instance_destroy(smoke_obj)
+
 		}
 	}
 }

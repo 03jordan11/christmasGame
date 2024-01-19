@@ -39,3 +39,7 @@ global.toysOnBelt = ds_list_create()
 
 global.mainMenuStartText = "Start"
 global.mainMenuExitText = "Exit"
+
+
+//positions
+global.bagPosition = [1135, 320]

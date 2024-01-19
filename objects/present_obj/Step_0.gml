@@ -1,0 +1,1 @@
+throwPresent(startX, startY, self)
