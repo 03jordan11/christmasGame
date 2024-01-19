@@ -55,7 +55,7 @@ function throwPresent(startX, startY, present){
 
 	//scaling
 
-	scaleFactor = 10
+	scaleFactor = 3
 
 	progress = point_distance(present.x, present.y, startX, startY) / point_distance(startX, startY, global.bagPosition[0], global.bagPosition[1])
 
