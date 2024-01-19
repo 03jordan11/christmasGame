@@ -28,8 +28,8 @@ global.masterVol = 100
 global.sfxVol = 100
 global.musicVol = 100
 
-global.conveyersOn = [true, false, true, false]
-global.conveyerSpeed = [[120, 200], [120, 200], [120, 200], [120, 200]]
+global.conveyersOn = [true, true, true, true]
+global.conveyerSpeed = [[120, 200], [200, 320], [120, 200], [180, 200]]
 
 global.spriteSpeed = 10
 
