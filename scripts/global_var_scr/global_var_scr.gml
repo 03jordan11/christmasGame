@@ -27,6 +27,7 @@ global.resolution = 0
 global.masterVol = 100
 global.sfxVol = 100
 global.musicVol = 100
+global.isPaused = false
 
 global.conveyersOn = [true, true, true, true]
 global.conveyerSpeed = [[120, 200], [200, 320], [120, 200], [180, 200]]

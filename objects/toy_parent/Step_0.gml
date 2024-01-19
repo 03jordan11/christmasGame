@@ -8,6 +8,8 @@ if (self.x >= 500){
 	
 }
 else{
-	self.x += 1.2
+	if(!global.isPaused){
+		self.x += 1.2
+	}
 }
 

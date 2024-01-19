@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(global.playerCanMove){
+if(global.playerCanMove && !global.isPaused){
 	playerMovement(self)
 }
 
@@ -10,7 +10,7 @@ if(global.playerCanMove){
    add where there is no anim when you aren't pressing space
    add back tapping, set it to default, make it changeable in settings
  **/
-if(keyboard_check(vk_space) && (isToyBelow(self) || global.playerIsWrapping)){
+if(!global.isPaused && keyboard_check(vk_space) && (isToyBelow(self) || global.playerIsWrapping)){
 	global.elfAnim = "wrapping"
 	if(!global.playerIsWrapping){
 		wrapPresent(self)
@@ -31,9 +31,11 @@ else{
 	}
 }
 
+if (global.isPaused){
+	image_speed = 0
+}
 
-
-if (global.elfAnim == ""){
+if (!global.isPaused && global.elfAnim == ""){
 	if (self.sprite_index != elf_idle_spr){
 		self.sprite_index = elf_wrapping_spr
 	}
@@ -41,14 +43,14 @@ if (global.elfAnim == ""){
 	image_speed = 0
 }
 
-if (global.elfAnim == "idle"){
+if (!global.isPaused && global.elfAnim == "idle"){
 	if (self.sprite_index != elf_idle_spr){
 		self.sprite_index = elf_idle_spr
 	}
 	image_speed = 1
 }
 
-if (global.elfAnim == "wrapping"){
+if (!global.isPaused && global.elfAnim == "wrapping"){
 	if (self.sprite_index != elf_wrapping_spr){
 		self.sprite_index = elf_wrapping_spr
 	}

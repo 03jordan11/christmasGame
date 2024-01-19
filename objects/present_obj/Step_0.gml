@@ -1,1 +1,3 @@
-throwPresent(startX, startY, self)
+if(!global.isPaused){ 
+	throwPresent(startX, startY, self)
+}	

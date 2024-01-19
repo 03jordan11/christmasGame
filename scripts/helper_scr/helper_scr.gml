@@ -14,6 +14,9 @@ function startTimer(){
 }
 
 function spawnToys(conveyorId){
+	if (global.isPaused){
+		return
+	}
 	xPos = 64
 	yPos = 0
 	switch(conveyorId){
