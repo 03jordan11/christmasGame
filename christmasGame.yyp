@@ -17,6 +17,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"control_objects","folderPath":"folders/Objects/control_objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GUI","folderPath":"folders/Objects/GUI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"main_menu_objects","folderPath":"folders/Objects/main_menu_objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player_objects","folderPath":"folders/Objects/player_objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"room_objects","folderPath":"folders/Objects/room_objects.yy",},
@@ -35,7 +36,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"toy_sprites","folderPath":"folders/Sprites/toy_sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GUI","folderPath":"folders/Objects/GUI.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ARCO (font I use for score, free commercial use too in case it's needed).TTF","CopyToMask":-1,"filePath":"datafiles",},

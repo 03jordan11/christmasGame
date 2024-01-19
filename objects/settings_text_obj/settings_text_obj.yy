@@ -1,18 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "elf_obj",
+  "name": "settings_text_obj",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "player_objects",
-    "path": "folders/Objects/player_objects.yy",
+    "name": "main_menu_objects",
+    "path": "folders/Objects/main_menu_objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "main_menu_options_parent_obj",
+    "path": "objects/main_menu_options_parent_obj/main_menu_options_parent_obj.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "elf_idle_spr",
-    "path": "sprites/elf_idle_spr/elf_idle_spr.yy",
+    "name": "main_menu_secondary_text_spr",
+    "path": "sprites/main_menu_secondary_text_spr/main_menu_secondary_text_spr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
