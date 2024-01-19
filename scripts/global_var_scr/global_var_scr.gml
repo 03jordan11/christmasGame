@@ -3,6 +3,10 @@
 //time
 global.initTime = 0
 global.checkedTime = 0
+global.timeSpaceHeld = 0
+global.spaceHeldStart = -1
+global.timerStart = -1
+global.levelTimeSeconds = 200
 
 //player
 global.playerName = 0
@@ -24,7 +28,8 @@ global.masterVol = 20
 global.sfxVol = 20
 global.musicVol = 20
 
-global.conveyerOn = false
+global.conveyersOn = [true, false, true, false]
+global.conveyerSpeed = [[120, 200], [120, 200], [120, 200], [120, 200]]
 
 global.spriteSpeed = 10
 

@@ -8,6 +8,6 @@ if (self.x >= 500){
 	
 }
 else{
-	self.x += 2
+	self.x += 1.2
 }
 

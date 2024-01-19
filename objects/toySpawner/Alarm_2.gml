@@ -1,4 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-spawnToys(0)
+
+
+spawnToys(2)
 

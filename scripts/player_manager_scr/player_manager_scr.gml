@@ -22,28 +22,33 @@ function movePlayer(player){
 }
 
 function wrapPresent(player){
-	if (!global.playerIsWrapping){
-		var toys = listToArray(global.toysOnBelt)
-		var toy = instance_position(player.x, player.y+120, toys)
-		if (toy != noone){
+	if (!global.playerIsWrapping){		
+		//can start wrapping if toy exists below
+		var toy = isToyBelow(player)
+		if (toy != noone){			
 			global.playerCanMove = false
 			global.playerIsWrapping = true
-			player.sprite_index = elf_wrapping_spr
+			global.elfAnim = "wrapping"
 			instance_create_depth(self.x, self.y + 75, -10000, smoke_obj)
 			instance_destroy(toy)
 		}
 	}else{
-		++global.wrappingTimesPressed
-		if(global.wrappingTimesPressed >= 8){
+		if(global.timeSpaceHeld >= 1){
+			global.score+=50
 			global.playerCanMove = true
-			global.wrappingTimesPressed = 0
 			global.playerIsWrapping = false
-			player.sprite_index = elf_idle_spr
-			instance_destroy(smoke_obj)			
+			global.elfAnim = "idle"
+			global.timeSpaceHeld = 0
+			global.spaceHeldStart = -1
+			instance_destroy(smoke_obj)	
 		}
-
 	}
+}
 
+function isToyBelow(player){
+	var toys = listToArray(global.toysOnBelt)
+	var toy = instance_position(player.x, player.y+120, toys)
+	return toy
 }
 
 function playerMovement(player){
