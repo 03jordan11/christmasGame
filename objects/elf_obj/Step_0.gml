@@ -10,27 +10,33 @@ if(global.playerCanMove && !global.isPaused){
    add where there is no anim when you aren't pressing space
    add back tapping, set it to default, make it changeable in settings
  **/
-if(!global.isPaused && wrapPresentInput() && (isToyBelow(self) || global.playerIsWrapping)){
-	global.elfAnim = "wrapping"
-	if(!global.playerIsWrapping){
-		wrapPresent(self)
-	}
-	if (global.spaceHeldStart == -1){
-		global.spaceHeldStart = current_time
-	}
-	else{
-		global.timeSpaceHeld += (current_time - global.spaceHeldStart) / 1000
-		global.spaceHeldStart = current_time
+if(global.wrappingType == 0){
+	if(!global.isPaused && wrapPresentInput()){
 		wrapPresent(self)
 	}
 }
 else{
-	if (global.spaceHeldStart != -1){
-		global.elfAnim = ""
-		global.spaceHeldStart = current_time
+	if(!global.isPaused && wrapPresentInput() && (isToyBelow(self) || global.playerIsWrapping)){
+		global.elfAnim = "wrapping"
+		if(!global.playerIsWrapping){
+			wrapPresent(self)
+		}
+		if (global.spaceHeldStart == -1){
+			global.spaceHeldStart = current_time
+		}
+		else{
+			global.timeSpaceHeld += (current_time - global.spaceHeldStart) / 1000
+			global.spaceHeldStart = current_time
+			wrapPresent(self)
+		}
+	}
+	else{
+		if (global.spaceHeldStart != -1){
+			global.elfAnim = ""
+			global.spaceHeldStart = current_time
+		}
 	}
 }
-
 if (global.isPaused){
 	image_speed = 0
 }

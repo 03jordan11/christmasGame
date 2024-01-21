@@ -29,14 +29,14 @@ function moveLeft(){
 	return keyboard || dPad || thumbstick
 }
 function moveRight(){
-	keyboard = keyboard_check(ord("W"))
+	keyboard = keyboard_check(ord("D"))
 	dPad = gamepad_button_check(0, gp_padr)
 	thumbstick = gamepad_axis_value(0, gp_axislh) > .5
 	return keyboard || dPad || thumbstick
 }
 function wrapPresentInput(){
-	keyboard = keyboard_check(vk_space)
-	controller = gamepad_button_check(0, gp_face1)
+	keyboard = global.wrappingType == 0 ? keyboard_check_released(vk_space) : keyboard_check(vk_space)
+	controller =  global.wrappingType == 0 ? gamepad_button_check_released(0, gp_face1) : gamepad_button_check(0, gp_face1)
 	return keyboard || controller
 }
 function pauseInput(){

@@ -33,19 +33,33 @@ function wrapPresent(player){
 			instance_destroy(toy)
 		}
 	}else{
-		if(global.timeSpaceHeld >= 1){
-			global.score+=50
-			global.playerCanMove = true
-			global.playerIsWrapping = false
-			global.elfAnim = "idle"
-			global.timeSpaceHeld = 0
-			global.spaceHeldStart = -1
-			instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
-			instance_destroy(smoke_obj)
+		if(global.wrappingType == 0){
+			++global.wrappingTimesPressed
+			if(global.wrappingTimesPressed >= 8){
+				global.playerCanMove = true
+				global.playerIsWrapping = false
+				global.wrappingTimesPressed = 0
+				global.elfAnim = "idle"
+				instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
+				instance_destroy(smoke_obj)
+			}
+		}
+		else{
+			if(global.timeSpaceHeld >= 1){
+				global.score+=50
+				global.playerCanMove = true
+				global.playerIsWrapping = false
+				global.elfAnim = "idle"
+				global.timeSpaceHeld = 0
+				global.spaceHeldStart = -1
+				instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
+				instance_destroy(smoke_obj)
 
+			}
 		}
 	}
 }
+
 
 function isToyBelow(player){
 	var toys = listToArray(global.toysOnBelt)
