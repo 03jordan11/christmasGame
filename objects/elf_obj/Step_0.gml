@@ -10,7 +10,7 @@ if(global.playerCanMove && !global.isPaused){
    add where there is no anim when you aren't pressing space
    add back tapping, set it to default, make it changeable in settings
  **/
-if(!global.isPaused && keyboard_check(vk_space) && (isToyBelow(self) || global.playerIsWrapping)){
+if(!global.isPaused && wrapPresentInput() && (isToyBelow(self) || global.playerIsWrapping)){
 	global.elfAnim = "wrapping"
 	if(!global.playerIsWrapping){
 		wrapPresent(self)

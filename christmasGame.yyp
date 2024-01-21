@@ -80,6 +80,7 @@
     {"id":{"name":"save_manager_scr","path":"scripts/save_manager_scr/save_manager_scr.yy",},},
     {"id":{"name":"timer_obj","path":"objects/timer_obj/timer_obj.yy",},},
     {"id":{"name":"global_var_scr","path":"scripts/global_var_scr/global_var_scr.yy",},},
+    {"id":{"name":"input_manager_scr","path":"scripts/input_manager_scr/input_manager_scr.yy",},},
     {"id":{"name":"presents_2_spr","path":"sprites/presents_2_spr/presents_2_spr.yy",},},
     {"id":{"name":"doll_spr","path":"sprites/doll_spr/doll_spr.yy",},},
     {"id":{"name":"toy_ball_obj","path":"objects/toy_ball_obj/toy_ball_obj.yy",},},
