@@ -30,8 +30,11 @@ global.musicVol = 100
 global.isPaused = false
 global.wrappingType = 0
 
+//game room
 global.conveyersOn = [true, true, true, true]
 global.conveyerSpeed = [[120, 200], [200, 320], [120, 200], [180, 200]]
+global.cocoMachineEnabled = false
+global.conveyerLeversEnabled = false
 
 global.spriteSpeed = 10
 
