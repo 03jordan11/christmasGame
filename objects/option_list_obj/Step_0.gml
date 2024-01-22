@@ -53,7 +53,14 @@ for (var i = 0; i < _size; i++) {
 						break
 						case "Music Volume":
 							global.musicVol = _sel
-						break						
+						break		
+						case "Wrapping Type":
+							global.wrappingType = _sel
+						break
+						case "Fullscreen":
+							global.fullscreen = _sel
+							setFullscreen(global.fullscreen)
+						break
 					}
 				}
 			}

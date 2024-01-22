@@ -26,6 +26,8 @@ function create_main_menu_options_list() {
 					ds_list_add(list, ["Main Volume", global.masterVol, [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]])
 					ds_list_add(list, ["Sound Effects Volume", global.sfxVol, [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]])
 					ds_list_add(list, ["Music Volume", global.musicVol, [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]])
+					ds_list_add(list, ["Wrapping Type", global.wrappingType, ["Tap", "Hold"]])
+					ds_list_add(list, ["Fullscreen", global.fullscreen, ["Off","On"]])
 					ds_list_add(list, ["Close", -1, []])
 				break
 			}
