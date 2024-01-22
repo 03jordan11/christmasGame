@@ -44,24 +44,7 @@ for (var i = 0; i < _size; i++) {
 				_arr[@ GameOption.SELECTED] = _sel
 				
 				if (type == ListType.MAIN_MENU_OPTIONS) {
-					switch (_name) {
-						case "Main Volume":
-							global.masterVol = _sel
-						break
-						case "Sound Effects Volume":
-							global.sfxVol = _sel
-						break
-						case "Music Volume":
-							global.musicVol = _sel
-						break		
-						case "Wrapping Type":
-							global.wrappingType = _sel
-						break
-						case "Fullscreen":
-							global.fullscreen = _sel
-							setFullscreen(global.fullscreen)
-						break
-					}
+					updateSetting(_name, _sel)					
 				}
 			}
 		}
