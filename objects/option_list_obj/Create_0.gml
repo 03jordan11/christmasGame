@@ -13,6 +13,11 @@ list = ds_list_create()
 
 hoverId = 0
 
+input_cooldown = 0
+cooldown_time = .4
+
+isGamepad = false
+
 function checkIsIncDecHovered(_x, _y, _sprite_width, _sprite_height, _mouseX, _mouseY){
 	var _left = _x - _sprite_width / 2;
     var _top = _y - _sprite_height / 2;

@@ -23,13 +23,15 @@ for (var i = 0; i < _size; i++) {
 		
 	if (_hover) {
 	
-		hoverId = i
+		if(!isGamepad){
+			hoverId = i	
+		}
 		
 		if (_sel == -1 && mouse_check_button_released(mb_left)) {
 			switch (_name) {
 				case "Close":
 					instance_destroy()
-				break
+					return
 			}
 		}
 		
@@ -49,4 +51,60 @@ for (var i = 0; i < _size; i++) {
 			}
 		}
 	}
+	
+	// Controller support
+	input_cooldown -= 1 / game_get_speed(gamespeed_fps)
+	
+	if(input_cooldown <= 0){
+		// Controller move down
+		if(gamepad_button_check_pressed(0, gp_padd) || gamepad_axis_value(0, gp_axislv) > .5){
+			hoverId = clamp(hoverId + 1, 0, _size-1)
+			input_cooldown = cooldown_time
+			isGamepad = true
+		}
+	
+		// Controller move up
+		if(gamepad_button_check_pressed(0, gp_padu) || gamepad_axis_value(0, gp_axislv) < -.5){
+			hoverId = clamp(hoverId - 1, 0, _size-1)
+			input_cooldown = cooldown_time
+			isGamepad = true
+		}
+		
+		// Controller decriment setting
+		if(gamepad_button_check(0, gp_padl) || gamepad_axis_value(0, gp_axislh) < -.5){
+			if(_sel > -1 && hoverId == i){
+				var _selClamped = clamp(_sel-1, 0, array_length(_vals) - 1)
+				updateSetting(_name, _selClamped)	
+				_arr[@ GameOption.SELECTED] = getSetting(_name)
+				input_cooldown = cooldown_time
+				isGamepad = true
+			}
+		}
+		
+		// Controller incriment setting
+		if(gamepad_button_check(0, gp_padr) || gamepad_axis_value(0, gp_axislh) > .5){
+			if(_sel > -1 && hoverId == i){
+				var _selClamped = clamp(_sel+1, 0, array_length(_vals) - 1)
+				updateSetting(_name, _selClamped)
+				_arr[@ GameOption.SELECTED] = getSetting(_name)
+				input_cooldown = cooldown_time
+				isGamepad = true
+			}
+		}
+		
+		// Close settings with the close button
+		if(gamepad_button_check(0, gp_face1) && _sel == -1 && hoverId == i){
+			switch (_name) {
+				case "Close":
+					instance_destroy()
+					return
+			}
+		}
+		
+		// Close settings with back button
+		if(gamepad_button_check(0, gp_face2)){
+			instance_destroy()	
+			return
+		}		
+	}	
 }

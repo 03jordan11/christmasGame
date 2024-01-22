@@ -87,12 +87,14 @@ for (var i = 0; i < _size; i++) {
 			var _selClamped = clamp(_sel-1, 0, array_length(_vals) - 1)
 			updateSetting(_name, _selClamped)	
 			_arr[@ GameOption.SELECTED] = getSetting(_name)
+			isGamepad = false
 		}
 		
 		if(_incHovered && mouse_check_button_pressed(mb_left)){
 			var _selClamped = clamp(_sel+1, 0, array_length(_vals) - 1)
 			updateSetting(_name, _selClamped)
 			_arr[@ GameOption.SELECTED] = getSetting(_name)
+			isGamepad = false
 		}
 	}
 }
