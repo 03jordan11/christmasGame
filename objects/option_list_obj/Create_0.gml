@@ -12,4 +12,3 @@ optionSpacing = 24
 list = ds_list_create()
 
 hoverId = -1
-

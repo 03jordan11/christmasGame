@@ -48,8 +48,8 @@
   },
   "origin": 1,
   "parent": {
-    "name": "christmasGame",
-    "path": "christmasGame.yyp",
+    "name": "main_menu_sprites",
+    "path": "folders/Sprites/main_menu_sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

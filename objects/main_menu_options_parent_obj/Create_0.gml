@@ -13,5 +13,4 @@ instance_create_layer(x, startY + (itemSpacing * 1.8), "Instances", exit_game_te
 
 isHovered = false
 
-settingsMenuOpen = false
 

@@ -37,6 +37,7 @@ global.toysOnBelt = ds_list_create()
 
 //strings
 
+global.settingsMenuIsOpen = false
 global.mainMenuStartText = "Start"
 global.mainMenuSettingsText = "Settings"
 global.mainMenuExitText = "Exit"

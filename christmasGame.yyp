@@ -36,6 +36,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"toy_sprites","folderPath":"folders/Sprites/toy_sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"settings_sprites","folderPath":"folders/Sprites/settings_sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"main_menu_sprites","folderPath":"folders/Sprites/main_menu_sprites.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ARCO (font I use for score, free commercial use too in case it's needed).TTF","CopyToMask":-1,"filePath":"datafiles",},
@@ -55,7 +57,6 @@
     {"id":{"name":"toy_doll_obj","path":"objects/toy_doll_obj/toy_doll_obj.yy",},},
     {"id":{"name":"tree_spr","path":"sprites/tree_spr/tree_spr.yy",},},
     {"id":{"name":"tree_obj","path":"objects/tree_obj/tree_obj.yy",},},
-    {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
     {"id":{"name":"exit_game_text_obj","path":"objects/exit_game_text_obj/exit_game_text_obj.yy",},},
     {"id":{"name":"main_menu_secondary_text_spr","path":"sprites/main_menu_secondary_text_spr/main_menu_secondary_text_spr.yy",},},
     {"id":{"name":"elf_wrapping_spr","path":"sprites/elf_wrapping_spr/elf_wrapping_spr.yy",},},

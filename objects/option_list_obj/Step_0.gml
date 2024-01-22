@@ -25,7 +25,7 @@ for (var i = 0; i < _size; i++) {
 	
 		hoverId = i
 		
-		if (_sel == -1 && _mousePress) {
+		if (_sel == -1 && mouse_check_button_released(mb_left)) {
 			switch (_name) {
 				case "Close":
 					instance_destroy()
