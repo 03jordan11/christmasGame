@@ -27,9 +27,14 @@ global.resolution = 0
 global.masterVol = 20
 global.sfxVol = 20
 global.musicVol = 20
+global.isPaused = false
+global.wrappingType = 0
 
-global.conveyersOn = [true, false, true, false]
-global.conveyerSpeed = [[120, 200], [120, 200], [120, 200], [120, 200]]
+//game room
+global.conveyersOn = [true, true, true, true]
+global.conveyerSpeed = [[120, 200], [200, 320], [120, 200], [180, 200]]
+global.cocoMachineEnabled = false
+global.conveyerLeversEnabled = false
 
 global.spriteSpeed = 10
 
@@ -41,3 +46,7 @@ global.settingsMenuIsOpen = false
 global.mainMenuStartText = "Start"
 global.mainMenuSettingsText = "Settings"
 global.mainMenuExitText = "Exit"
+
+
+//positions
+global.bagPosition = [1135, 320]

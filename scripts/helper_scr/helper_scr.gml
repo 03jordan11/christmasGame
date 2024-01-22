@@ -14,6 +14,9 @@ function startTimer(){
 }
 
 function spawnToys(conveyorId){
+	if (global.isPaused){
+		return
+	}
 	xPos = 64
 	yPos = 0
 	switch(conveyorId){
@@ -32,4 +35,40 @@ function spawnToys(conveyorId){
 	}
 	toy = instance_create_depth(xPos, yPos, -10000, global.toys[irandom(4)])
 	ds_list_add(global.toysOnBelt, toy)
+}
+
+function throwPresent(startX, startY, present){
+	speed = 4
+
+	direction = point_direction(present.x, present.y, global.bagPosition[0], global.bagPosition[1])
+	distance = point_distance(present.x, present.y, global.bagPosition[0], global.bagPosition[1])
+
+
+
+	xStep = lengthdir_x(min(speed, distance), direction)
+	yStep = lengthdir_y(min(speed, distance), direction)
+
+	x += xStep
+	y += yStep
+
+	image_angle += 5
+
+	//scaling
+
+	scaleFactor = 3
+
+	progress = point_distance(present.x, present.y, startX, startY) / point_distance(startX, startY, global.bagPosition[0], global.bagPosition[1])
+
+	if (progress < 0.5){
+		image_xscale = 1 + progress * scaleFactor
+		image_yscale = 1 + progress * scaleFactor
+	}
+	else{
+		image_xscale = 1 + (1 - progress) * scaleFactor
+		image_yscale = 1 + (1 - progress) * scaleFactor
+	}
+	
+	if (present.x == global.bagPosition[0] && present.y == global.bagPosition[1]){
+		instance_destroy(present)
+	}
 }

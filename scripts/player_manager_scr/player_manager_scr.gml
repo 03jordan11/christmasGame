@@ -33,17 +33,33 @@ function wrapPresent(player){
 			instance_destroy(toy)
 		}
 	}else{
-		if(global.timeSpaceHeld >= 1){
-			global.score+=50
-			global.playerCanMove = true
-			global.playerIsWrapping = false
-			global.elfAnim = "idle"
-			global.timeSpaceHeld = 0
-			global.spaceHeldStart = -1
-			instance_destroy(smoke_obj)	
+		if(global.wrappingType == 0){
+			++global.wrappingTimesPressed
+			if(global.wrappingTimesPressed >= 8){
+				global.playerCanMove = true
+				global.playerIsWrapping = false
+				global.wrappingTimesPressed = 0
+				global.elfAnim = "idle"
+				instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
+				instance_destroy(smoke_obj)
+			}
+		}
+		else{
+			if(global.timeSpaceHeld >= 1){
+				global.score+=50
+				global.playerCanMove = true
+				global.playerIsWrapping = false
+				global.elfAnim = "idle"
+				global.timeSpaceHeld = 0
+				global.spaceHeldStart = -1
+				instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
+				instance_destroy(smoke_obj)
+
+			}
 		}
 	}
 }
+
 
 function isToyBelow(player){
 	var toys = listToArray(global.toysOnBelt)
@@ -52,7 +68,7 @@ function isToyBelow(player){
 }
 
 function playerMovement(player){
-	if(keyboard_check_released(ord("W"))){
+	if(moveUp()){
 		if (global.location <= 1){
 			global.location = 1
 		}else{
@@ -60,7 +76,7 @@ function playerMovement(player){
 		}
 		movePlayer(player)
 	}
-	if(keyboard_check_released(ord("S"))){
+	if(moveDown()){
 		if(global.location > 3){
 			global.location = 4
 		}
@@ -70,12 +86,12 @@ function playerMovement(player){
 		movePlayer(player)
 
 	}
-	if(keyboard_check(ord("A")) && player.x >= 65){
+	if(moveLeft() && player.x >= 65){
 		if(global.location != 0){
 			player.x = player.x - 2.5
 		}
 	}
-	if(keyboard_check(ord("D")) && player.x <= 575){
+	if(moveRight() && player.x <= 575){
 		if(global.location != 0){
 			player.x = player.x + 2.5
 		}
