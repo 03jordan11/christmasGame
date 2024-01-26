@@ -44,3 +44,8 @@ function pauseInput(){
 	controller = gamepad_button_check_released(0, gp_start)
 	return keyboard || controller
 }
+function drinkCocoInput(){
+	keyboard = keyboard_check_released(ord("X"))
+	controller = gamepad_button_check_released(0, gp_face3)
+	return keyboard || controller
+}

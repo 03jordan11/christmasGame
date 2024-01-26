@@ -17,6 +17,10 @@ global.playerIsWrapping = false
 global.wrappingTimesPressed = 0
 global.elfAnim = "idle"
 global.playerCanMove = true
+global.wrappingTimeSeconds = 2
+global.wrappingTimeButtonPress = 6
+global.cocoTimeReductionSeconds = 1
+global.cocoTimePressedReduction = 3
 
 //settings
 global.difficulty = 0
@@ -33,8 +37,11 @@ global.wrappingType = 0
 //game room
 global.conveyersOn = [true, true, true, true]
 global.conveyerSpeed = [[120, 200], [200, 320], [120, 200], [180, 200]]
-global.cocoMachineEnabled = false
+global.cocoMachineEnabled = true
 global.conveyerLeversEnabled = false
+global.cocoIsMaking = false
+global.cocoMakingTime = 10
+global.cocoIsReady = false
 
 global.spriteSpeed = 10
 
