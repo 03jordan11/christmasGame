@@ -6,4 +6,6 @@ function IDEAS(){
 
 	//Clock on the wall with no time, but its morning, afternoon, evening
 	//have pixel artist draw
+	
+	//need anim for coco machine making
 }

@@ -5,6 +5,9 @@ if(global.playerCanMove && !global.isPaused){
 	playerMovement(self)
 }
 
+if(global.cocoIsReady && !global.isPaused){
+	drinkCoco()
+}
 //TODO REFACTOR THIS GARBAGE
 /**add where you cant just continously hold it down and wrap everything
    add where there is no anim when you aren't pressing space

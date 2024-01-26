@@ -35,7 +35,7 @@ function wrapPresent(player){
 	}else{
 		if(global.wrappingType == 0){
 			++global.wrappingTimesPressed
-			if(global.wrappingTimesPressed >= 8){
+			if(global.wrappingTimesPressed >= global.wrappingTimeButtonPress){
 				global.playerCanMove = true
 				global.playerIsWrapping = false
 				global.wrappingTimesPressed = 0
@@ -45,7 +45,7 @@ function wrapPresent(player){
 			}
 		}
 		else{
-			if(global.timeSpaceHeld >= 1){
+			if(global.timeSpaceHeld >= global.wrappingTimeSeconds){
 				global.score+=50
 				global.playerCanMove = true
 				global.playerIsWrapping = false
@@ -96,4 +96,20 @@ function playerMovement(player){
 			player.x = player.x + 2.5
 		}
 	}
+}
+	
+function drinkCoco(){
+	if(drinkCocoInput()){
+		global.cocoIsReady = false
+		global.wrappingTimeSeconds -= global.cocoTimeReductionSeconds
+		global.wrappingTimeButtonPress -= global.cocoTimePressedReduction
+		show_debug_message("drunk the coco")
+		coco_obj.alarm[1] = (global.cocoMakingTime / 2) * 60
+		//set time to wrap to lower here for so many seconds
+	}
+}
+
+function resetWrappingTimes(){
+	global.wrappingTimeSeconds += global.cocoTimeReductionSeconds
+	global.wrappingTimeButtonPress += global.cocoTimePressedReduction
 }

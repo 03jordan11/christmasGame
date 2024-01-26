@@ -66,6 +66,7 @@
     {"id":{"name":"main_menu_options_parent_obj","path":"objects/main_menu_options_parent_obj/main_menu_options_parent_obj.yy",},},
     {"id":{"name":"conveyer_obj","path":"objects/conveyer_obj/conveyer_obj.yy",},},
     {"id":{"name":"elf_idle_spr","path":"sprites/elf_idle_spr/elf_idle_spr.yy",},},
+    {"id":{"name":"coco_obj","path":"objects/coco_obj/coco_obj.yy",},},
     {"id":{"name":"room_spr","path":"sprites/room_spr/room_spr.yy",},},
     {"id":{"name":"presents_3_spr","path":"sprites/presents_3_spr/presents_3_spr.yy",},},
     {"id":{"name":"bouncy_ball_spr","path":"sprites/bouncy_ball_spr/bouncy_ball_spr.yy",},},
