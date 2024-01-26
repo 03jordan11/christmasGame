@@ -13,8 +13,8 @@ list = ds_list_create()
 
 hoverId = 0
 
-input_cooldown = 0
-cooldown_time = .4
+inputCooldown = 0
+cooldownTime = .4
 
 isGamepad = false
 

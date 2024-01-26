@@ -6,3 +6,8 @@ draw_set_color(c_green)
 
 isHovered = false
 
+function executeAction(){
+	if(!global.settingsMenuIsOpen){
+		game_end()
+	}
+}

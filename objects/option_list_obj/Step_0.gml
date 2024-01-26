@@ -53,20 +53,20 @@ for (var i = 0; i < _size; i++) {
 	}
 	
 	// Controller support
-	input_cooldown -= 1 / game_get_speed(gamespeed_fps)
+	inputCooldown -= 1 / game_get_speed(gamespeed_fps)
 	
-	if(input_cooldown <= 0){
+	if(inputCooldown <= 0){
 		// Controller move down
 		if(gamepad_button_check_pressed(0, gp_padd) || gamepad_axis_value(0, gp_axislv) > .5){
 			hoverId = clamp(hoverId + 1, 0, _size-1)
-			input_cooldown = cooldown_time
+			inputCooldown = cooldownTime
 			isGamepad = true
 		}
 	
 		// Controller move up
 		if(gamepad_button_check_pressed(0, gp_padu) || gamepad_axis_value(0, gp_axislv) < -.5){
 			hoverId = clamp(hoverId - 1, 0, _size-1)
-			input_cooldown = cooldown_time
+			inputCooldown = cooldownTime
 			isGamepad = true
 		}
 		
@@ -76,7 +76,7 @@ for (var i = 0; i < _size; i++) {
 				var _selClamped = clamp(_sel-1, 0, array_length(_vals) - 1)
 				updateSetting(_name, _selClamped)	
 				_arr[@ GameOption.SELECTED] = getSetting(_name)
-				input_cooldown = cooldown_time
+				inputCooldown = cooldownTime
 				isGamepad = true
 			}
 		}
@@ -87,7 +87,7 @@ for (var i = 0; i < _size; i++) {
 				var _selClamped = clamp(_sel+1, 0, array_length(_vals) - 1)
 				updateSetting(_name, _selClamped)
 				_arr[@ GameOption.SELECTED] = getSetting(_name)
-				input_cooldown = cooldown_time
+				inputCooldown = cooldownTime
 				isGamepad = true
 			}
 		}

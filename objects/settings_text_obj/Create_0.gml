@@ -5,3 +5,10 @@ draw_set_font(ARCO_main_menu_font)
 draw_set_color(c_green)
 
 isHovered = false
+
+function executeAction(){
+	if(!global.settingsMenuIsOpen){
+		global.settingsMenuIsOpen = true
+		create_main_menu_options_list(0, 0, window_get_width(), window_get_height(), ListType.MAIN_MENU_OPTIONS)
+	}
+}

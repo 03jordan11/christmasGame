@@ -4,4 +4,4 @@
 draw_set_font(ARCO_main_menu_font)
 draw_set_color(c_green)
 
-isHovered = false
+isHovered = true
