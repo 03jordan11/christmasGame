@@ -113,3 +113,17 @@ function resetWrappingTimes(){
 	global.wrappingTimeSeconds += global.cocoTimeReductionSeconds
 	global.wrappingTimeButtonPress += global.cocoTimePressedReduction
 }
+	
+function pressLever(player){
+	if (pullLeverInput()){
+		lever = isLeverBelow(player)
+		if(lever != noone){
+			global.conveyersOn[lever.lever_id] = !global.conveyersOn[lever.lever_id]
+		}
+	}
+}
+
+function isLeverBelow(player){
+	var lever = instance_position(player.x+32, player.y+120, lever_obj)
+	return lever
+}

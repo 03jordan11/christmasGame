@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-spawnToys(3)
+if (global.conveyersOn[3]){
+	spawnToys(3)
+}
 
 
 

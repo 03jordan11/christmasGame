@@ -14,7 +14,7 @@ if (self.x >= 500 && !global.isPaused){
 	
 }
 else{
-	if(!global.isPaused){
+	if(!global.isPaused && global.conveyersOn[conveyorToyId]){
 		self.x += 1.2
 	}
 }
