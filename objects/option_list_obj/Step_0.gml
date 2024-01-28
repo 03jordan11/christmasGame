@@ -93,7 +93,7 @@ for (var i = 0; i < _size; i++) {
 		}
 		
 		// Close settings with the close button
-		if(gamepad_button_check(0, gp_face1) && _sel == -1 && hoverId == i){
+		if(gamepad_button_check_released(0, gp_face1) && _sel == -1 && hoverId == i){
 			switch (_name) {
 				case "Close":
 					instance_destroy()
@@ -102,7 +102,7 @@ for (var i = 0; i < _size; i++) {
 		}
 		
 		// Close settings with back button
-		if(gamepad_button_check(0, gp_face2)){
+		if(gamepad_button_check_released(0, gp_face2)){
 			instance_destroy()	
 			return
 		}		

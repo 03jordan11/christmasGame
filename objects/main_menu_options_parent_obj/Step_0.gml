@@ -22,7 +22,7 @@ if(inputCooldown <= 0 && !global.settingsMenuIsOpen){
 	}
 		
 	// Controller enter
-	if(gamepad_button_check(0, gp_face1)){
+	if(gamepad_button_check_released(0, gp_face1)){
 		selectOption()
 		inputCooldown = cooldownTime
 		isGamepad = true
