@@ -38,13 +38,13 @@ function spawnToys(conveyorId){
 }
 
 function throwPresent(startX, startY, present){
-	speed = 4
+	theSpeed = 8
 
 	direction = point_direction(present.x, present.y, global.bagPosition[0], global.bagPosition[1])
 	distance = point_distance(present.x, present.y, global.bagPosition[0], global.bagPosition[1])
 
-	xStep = lengthdir_x(min(speed, distance), direction)
-	yStep = lengthdir_y(min(speed, distance), direction)
+	xStep = lengthdir_x(min(theSpeed, distance), direction)
+	yStep = lengthdir_y(min(theSpeed, distance), direction)
 
 	x += xStep
 	y += yStep
