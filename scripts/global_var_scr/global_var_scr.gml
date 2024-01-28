@@ -26,11 +26,11 @@ global.cocoTimePressedReduction = 3
 global.difficulty = 0
 global.score = 0
 global.highestScore = 0
-global.fullscreen = true
+global.fullscreen = false
 global.resolution = 0
-global.masterVol = 100
-global.sfxVol = 100
-global.musicVol = 100
+global.masterVol = 20
+global.sfxVol = 20
+global.musicVol = 20
 global.isPaused = false
 global.wrappingType = 0
 
@@ -50,7 +50,9 @@ global.toysOnBelt = ds_list_create()
 
 //strings
 
+global.settingsMenuIsOpen = false
 global.mainMenuStartText = "Start"
+global.mainMenuSettingsText = "Settings"
 global.mainMenuExitText = "Exit"
 
 

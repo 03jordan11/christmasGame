@@ -8,6 +8,7 @@ isHovered = false
 
 function executeAction(){
 	if(!global.settingsMenuIsOpen){
-		game_end()
+		global.settingsMenuIsOpen = true
+		create_main_menu_options_list(0, 0, window_get_width(), window_get_height(), ListType.MAIN_MENU_OPTIONS)
 	}
 }
