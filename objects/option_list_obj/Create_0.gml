@@ -46,6 +46,8 @@ function updateSetting(_name, _sel){
 			setFullscreen(global.fullscreen)
 		break	
 	}
+	
+	
 }
 
 function getSetting(_name){
