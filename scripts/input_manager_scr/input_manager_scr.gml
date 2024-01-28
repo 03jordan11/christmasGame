@@ -46,6 +46,11 @@ function pauseInput(){
 }
 function drinkCocoInput(){
 	keyboard = keyboard_check_released(ord("X"))
-	controller = gamepad_button_check_released(0, gp_face3)
+	controller = gamepad_button_check_released(0, gp_face4)
+	return keyboard || controller
+}
+function pullLeverInput(){
+	keyboard = keyboard_check_released(ord("E"))
+	controller = gamepad_button_check(0, gp_face3)
 	return keyboard || controller
 }

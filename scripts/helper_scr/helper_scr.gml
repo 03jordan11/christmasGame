@@ -33,7 +33,7 @@ function spawnToys(conveyorId){
 			yPos = 658
 			break
 	}
-	toy = instance_create_depth(xPos, yPos, -10000, global.toys[irandom(4)])
+	toy = instance_create_depth(xPos, yPos, -10000, global.toys[irandom(4)], {conveyorToyId: conveyorId})
 	ds_list_add(global.toysOnBelt, toy)
 }
 

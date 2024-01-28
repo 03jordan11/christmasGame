@@ -5,6 +5,10 @@ if(global.playerCanMove && !global.isPaused){
 	playerMovement(self)
 }
 
+if(global.leversEnabled && !global.isPaused){
+	pressLever(self)
+}
+
 if(global.cocoIsReady && !global.isPaused){
 	drinkCoco()
 }

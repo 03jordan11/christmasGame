@@ -35,13 +35,14 @@ global.isPaused = false
 global.wrappingType = 0
 
 //game room
-global.conveyersOn = [true, true, true, true]
+global.conveyersOn = [true, true, false, false]
 global.conveyerSpeed = [[120, 200], [200, 320], [120, 200], [180, 200]]
 global.cocoMachineEnabled = true
 global.conveyerLeversEnabled = false
 global.cocoIsMaking = false
 global.cocoMakingTime = 10
 global.cocoIsReady = false
+global.leversEnabled = true
 
 global.spriteSpeed = 10
 
