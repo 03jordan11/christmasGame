@@ -43,8 +43,6 @@ function throwPresent(startX, startY, present){
 	direction = point_direction(present.x, present.y, global.bagPosition[0], global.bagPosition[1])
 	distance = point_distance(present.x, present.y, global.bagPosition[0], global.bagPosition[1])
 
-
-
 	xStep = lengthdir_x(min(speed, distance), direction)
 	yStep = lengthdir_y(min(speed, distance), direction)
 
