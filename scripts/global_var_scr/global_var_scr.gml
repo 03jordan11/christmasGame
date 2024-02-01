@@ -1,12 +1,13 @@
 //initializes global variables
-
+global.showText = true
+global.currentLevel = 1
 //time
 global.initTime = 0
 global.checkedTime = 0
 global.timeSpaceHeld = 0
 global.spaceHeldStart = -1
 global.timerStart = -1
-global.levelTimeSeconds = 200
+global.levelTimeSeconds = 10
 
 //player
 global.playerName = 0

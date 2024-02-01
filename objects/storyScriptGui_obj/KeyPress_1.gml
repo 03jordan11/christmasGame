@@ -2,8 +2,7 @@
 // You can write your code in this editor
 
 
-global.levelTimeSeconds--
-if (global.levelTimeSeconds<= 0){
-	endGameSetup()
-}
+
+
+
 

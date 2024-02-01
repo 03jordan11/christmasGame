@@ -70,3 +70,11 @@ function throwPresent(startX, startY, present){
 		instance_destroy(present)
 	}
 }
+
+function endGameSetup(){
+	//if endless mode, do somethings
+	//if last level, do something else
+	++global.currentLevel
+	global.levelTimeSeconds = 10
+	room_restart()
+}
