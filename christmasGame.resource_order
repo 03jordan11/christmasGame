@@ -37,6 +37,7 @@
     {"name":"presents_1_spr","order":4,"path":"sprites/presents_1_spr/presents_1_spr.yy",},
     {"name":"toy_doll_obj","order":1,"path":"objects/toy_doll_obj/toy_doll_obj.yy",},
     {"name":"tree_spr","order":2,"path":"sprites/tree_spr/tree_spr.yy",},
+    {"name":"endless_mode_text_obj","order":4,"path":"objects/endless_mode_text_obj/endless_mode_text_obj.yy",},
     {"name":"exit_game_text_obj","order":2,"path":"objects/exit_game_text_obj/exit_game_text_obj.yy",},
     {"name":"main_menu_secondary_text_spr","order":1,"path":"sprites/main_menu_secondary_text_spr/main_menu_secondary_text_spr.yy",},
     {"name":"elf_wrapping_spr","order":1,"path":"sprites/elf_wrapping_spr/elf_wrapping_spr.yy",},

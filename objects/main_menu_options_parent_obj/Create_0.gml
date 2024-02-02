@@ -12,11 +12,12 @@ x = room_width/2
 y =  room_height/2
 
 var itemSpacing = 150
-var startY = y - itemSpacing
+var startY = y - itemSpacing - 50
 
 _menuItems = [instance_create_layer(x, startY, "Instances", start_game_text_obj),
-			  instance_create_layer(x, startY + itemSpacing, "Instances", settings_text_obj),
-			  instance_create_layer(x, startY + (itemSpacing * 1.8), "Instances", exit_game_text_obj)]
+              instance_create_layer(x, startY + itemSpacing, "Instances", endless_mode_text_obj),
+			  instance_create_layer(x, startY + itemSpacing *1.7 , "Instances", settings_text_obj),
+			  instance_create_layer(x, startY + itemSpacing *2.4, "Instances", exit_game_text_obj)]
 
 for(var _i = 0; _i < array_length(_menuItems); _i++){
 	_menuItems[_i].parentId = id;

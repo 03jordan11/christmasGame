@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-currentTextToDisplay = global.storyScripts[global.currentLevel-1][0]
+displayGui = global.currentLevel != -1
+currentTextToDisplay = displayGui ? global.storyScripts[global.currentLevel-1][0] : ""
 currTextOrder = 0
-displayGui = true
-global.isPaused = true
+
+global.isPaused = displayGui
 
 
 

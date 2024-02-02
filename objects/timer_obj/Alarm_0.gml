@@ -4,6 +4,8 @@
 
 global.levelTimeSeconds--
 if (global.levelTimeSeconds<= 0){
-	endGameSetup()
+	if(global.currentLevel != -1){
+		endGameSetup()
+	}	
 }
 

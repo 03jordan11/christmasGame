@@ -58,6 +58,7 @@
     {"id":{"name":"toy_doll_obj","path":"objects/toy_doll_obj/toy_doll_obj.yy",},},
     {"id":{"name":"tree_spr","path":"sprites/tree_spr/tree_spr.yy",},},
     {"id":{"name":"tree_obj","path":"objects/tree_obj/tree_obj.yy",},},
+    {"id":{"name":"endless_mode_text_obj","path":"objects/endless_mode_text_obj/endless_mode_text_obj.yy",},},
     {"id":{"name":"exit_game_text_obj","path":"objects/exit_game_text_obj/exit_game_text_obj.yy",},},
     {"id":{"name":"main_menu_secondary_text_spr","path":"sprites/main_menu_secondary_text_spr/main_menu_secondary_text_spr.yy",},},
     {"id":{"name":"elf_wrapping_spr","path":"sprites/elf_wrapping_spr/elf_wrapping_spr.yy",},},

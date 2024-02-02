@@ -55,7 +55,7 @@ global.settingsMenuIsOpen = false
 global.mainMenuStartText = "Start"
 global.mainMenuSettingsText = "Settings"
 global.mainMenuExitText = "Exit"
-
+global.endlessModeText = "Endless Mode"
 
 //positions
 global.bagPosition = [1135, 320]

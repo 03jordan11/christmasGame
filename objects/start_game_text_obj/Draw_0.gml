@@ -19,6 +19,7 @@ if (isHovered) {
 
 function executeAction(){
 	if(!global.settingsMenuIsOpen){
+		global.currentLevel = 1
 		room_goto(SantasWorkshop)
 	}
 }
