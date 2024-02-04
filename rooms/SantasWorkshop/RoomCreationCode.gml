@@ -16,5 +16,8 @@ else{
 	global.cocoMachineEnabled = true
 }
 
+if (global.currentLevel != -1){
+	save()
+}
 
 //if level 2, disable levers

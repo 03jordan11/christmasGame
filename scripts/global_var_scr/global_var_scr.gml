@@ -1,4 +1,5 @@
 //initializes global variables
+global.saveFileName = "save_file.json"
 global.showText = true
 global.currentLevel = 1
 //time
@@ -27,6 +28,7 @@ global.cocoTimePressedReduction = 3
 global.difficulty = 0
 global.score = 0
 global.highestScore = 0
+global.highestEndlessScore = 0
 global.fullscreen = false
 global.resolution = 0
 global.masterVol = 20
