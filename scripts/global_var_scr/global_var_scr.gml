@@ -1,7 +1,7 @@
 //initializes global variables
 global.saveFileName = "save_file.json"
 global.showText = true
-global.currentLevel = 1
+global.currentLevel = -1
 //time
 global.initTime = 0
 global.checkedTime = 0
@@ -58,6 +58,7 @@ global.mainMenuStartText = "Start"
 global.mainMenuSettingsText = "Settings"
 global.mainMenuExitText = "Exit"
 global.endlessModeText = "Endless Mode"
+global.continueText = "Continue"
 
 //positions
 global.bagPosition = [1135, 320]

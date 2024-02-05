@@ -11,13 +11,22 @@ isGamepad = false
 x = room_width/2
 y =  room_height/2
 
-var itemSpacing = 150
-var startY = y - itemSpacing - 50
+var itemSpacing = 96
+var startY = y - itemSpacing/2
 
-_menuItems = [instance_create_layer(x, startY, "Instances", start_game_text_obj),
-              instance_create_layer(x, startY + itemSpacing, "Instances", endless_mode_text_obj),
-			  instance_create_layer(x, startY + itemSpacing *1.7 , "Instances", settings_text_obj),
-			  instance_create_layer(x, startY + itemSpacing *2.4, "Instances", exit_game_text_obj)]
+_menuItems = []
+
+array_push(_menuItems,
+			instance_create_layer(x, startY + itemSpacing *3, "Instances", exit_game_text_obj),
+			instance_create_layer(x, startY + itemSpacing *2 , "Instances", settings_text_obj),
+			instance_create_layer(x, startY + itemSpacing, "Instances", endless_mode_text_obj),
+			instance_create_layer(x, startY, "Instances", start_game_text_obj))
+
+show_debug_message("Am in create event of object, level is " + string(global.currentLevel))
+if(global.currentLevel != -1){
+	array_push(_menuItems,
+				instance_create_layer(x, startY - 96, "Instances", continue_text_obj))
+}
 
 for(var _i = 0; _i < array_length(_menuItems); _i++){
 	_menuItems[_i].parentId = id;

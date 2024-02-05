@@ -38,6 +38,7 @@ function load(fileName){
 		global.wrappingType = data.settings.wrappingType
 		
 		initSavedSettings()
+		show_debug_message("inside load, level is " + string(global.currentLevel))
 	}	
 }
 

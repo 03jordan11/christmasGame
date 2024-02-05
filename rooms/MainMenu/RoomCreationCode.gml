@@ -1,1 +1,0 @@
-load(global.saveFileName)
