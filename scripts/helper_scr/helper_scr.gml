@@ -75,6 +75,6 @@ function endGameSetup(){
 	//if endless mode, do somethings
 	//if last level, do something else
 	++global.currentLevel
-	global.levelTimeSeconds = 10
+	global.levelTimeSeconds = 60
 	room_restart()
 }

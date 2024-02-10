@@ -8,7 +8,7 @@ global.checkedTime = 0
 global.timeSpaceHeld = 0
 global.spaceHeldStart = -1
 global.timerStart = -1
-global.levelTimeSeconds = 10
+global.levelTimeSeconds = 60
 
 //player
 global.playerName = 0
@@ -38,7 +38,7 @@ global.isPaused = false
 global.wrappingType = 0
 
 //game room
-global.conveyersOn = [true, true, false, false]
+global.conveyersOn = [true, true, true, true]
 global.conveyerSpeed = [[120, 200], [200, 320], [120, 200], [180, 200]]
 global.cocoMachineEnabled = true
 global.conveyerLeversEnabled = false
