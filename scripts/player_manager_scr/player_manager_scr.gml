@@ -118,8 +118,27 @@ function pressLever(player){
 	if (pullLeverInput()){
 		lever = isLeverBelow(player)
 		if(lever != noone){
+			if(numLeversOn() > 1){
+				allLeversOn()
+			}
 			global.conveyersOn[lever.lever_id] = !global.conveyersOn[lever.lever_id]
 		}
+	}
+}
+
+function numLeversOn(){
+	var count = 0
+	for (var i = 0; i < 4; i++){
+		if (!global.conveyersOn[i]){
+			count++
+		}
+	}
+	return count
+}
+
+function allLeversOn(){
+	for (var i = 0; i < 4; i++){
+		global.conveyersOn[i] = true
 	}
 }
 
