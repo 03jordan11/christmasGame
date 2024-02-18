@@ -56,6 +56,8 @@
     {"name":"window_obj","order":1,"path":"objects/window_obj/window_obj.yy",},
     {"name":"pause_obj","order":3,"path":"objects/pause_obj/pause_obj.yy",},
     {"name":"toy_train_spr","order":4,"path":"sprites/toy_train_spr/toy_train_spr.yy",},
+    {"name":"SpaceKey","order":10,"path":"sprites/SpaceKey/SpaceKey.yy",},
+    {"name":"button_xbox_digital_a_4","order":7,"path":"sprites/button_xbox_digital_a_4/button_xbox_digital_a_4.yy",},
     {"name":"IDEAS","order":6,"path":"scripts/IDEAS/IDEAS.yy",},
     {"name":"toy_train_obj","order":3,"path":"objects/toy_train_obj/toy_train_obj.yy",},
     {"name":"rocking_horse_spr","order":2,"path":"sprites/rocking_horse_spr/rocking_horse_spr.yy",},

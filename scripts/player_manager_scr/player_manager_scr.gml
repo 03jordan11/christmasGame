@@ -36,6 +36,7 @@ function wrapPresent(player){
 		if(global.wrappingType == 0){
 			++global.wrappingTimesPressed
 			if(global.wrappingTimesPressed >= global.wrappingTimeButtonPress){
+				global.score+=50
 				global.playerCanMove = true
 				global.playerIsWrapping = false
 				global.wrappingTimesPressed = 0
