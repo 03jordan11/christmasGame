@@ -54,3 +54,8 @@ function pullLeverInput(){
 	controller = gamepad_button_check(0, gp_face3)
 	return keyboard || controller
 }
+function anyInput(){
+	keyboard = keyboard_check_released(vk_anykey)
+	controller = gamepad_button_check_released(0, gp_face1) || gamepad_button_check_released(0, gp_face2) || gamepad_button_check_released(0, gp_face3) || gamepad_button_check_released(0, gp_face4)
+	return keyboard || controller
+}

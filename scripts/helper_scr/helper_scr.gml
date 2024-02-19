@@ -76,5 +76,16 @@ function endGameSetup(){
 	//if last level, do something else
 	++global.currentLevel
 	global.levelTimeSeconds = 60
+	endWrapping()
+	
 	room_restart()
+}
+
+function endWrapping(){
+	global.playerCanMove = true
+	global.playerIsWrapping = false
+	global.wrappingTimesPressed = 0
+	global.timeSpaceHeld = 0
+	global.spaceHeldStart = -1
+	global.elfAnim = "idle"
 }
