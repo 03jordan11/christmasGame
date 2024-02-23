@@ -12,6 +12,7 @@ if (self.x >= 500 && !global.isPaused){
 	self.sprite_index = wrapping_spr
 	image_blend = make_color_rgb(128, 128, 128)
 	
+	
 }
 else{
 	if(!global.isPaused && global.conveyersOn[conveyorToyId]){

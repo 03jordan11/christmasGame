@@ -71,14 +71,31 @@ function throwPresent(startX, startY, present){
 	}
 }
 
-function endGameSetup(){
+function endGameSetup(isLevelFailed = false){
 	//if endless mode, do somethings
 	//if last level, do something else
-	++global.currentLevel
-	global.levelTimeSeconds = 60
-	endWrapping()
+	if(global.currentLevel == -1){
+		//DO ENDLESS MODE STUFF
+	}
+	else if(global.currentLevel == 5){
+		global.levelTimeSeconds = 60
+		global.health = 5
+		global.score = 0
+		endWrapping()
+	}
+	else{
+		if(!isLevelFailed){
+			++global.currentLevel
+		}
+		global.levelTimeSeconds = 60
+		global.health = 5
+		endWrapping()
 	
-	room_restart()
+		if(!isLevelFailed){
+			room_restart()
+		}
+	}
+
 }
 
 function endWrapping(){

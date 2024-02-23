@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "SpaceKey",
-  "bbox_bottom": 31,
-  "bbox_left": 0,
-  "bbox_right": 63,
+  "name": "button_xbox_digital_b_4",
+  "bbox_bottom": 58,
+  "bbox_left": 5,
+  "bbox_right": 58,
   "bbox_top": 5,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5067c8b6-2815-43ad-b61d-6c2ebe388e37",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7dadd68-5b60-46cf-9e53-617a6cc6e575",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"74491b3f-cd35-43fe-b2b9-275730668de7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"92e05911-baac-4668-8dfb-d6515f27800c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "SpaceKey",
+    "name": "button_xbox_digital_b_4",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5067c8b6-2815-43ad-b61d-6c2ebe388e37","path":"sprites/SpaceKey/SpaceKey.yy",},},},"Disabled":false,"id":"cc733400-cc2e-4aa8-a833-336c277011c8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d7dadd68-5b60-46cf-9e53-617a6cc6e575","path":"sprites/button_xbox_digital_b_4/button_xbox_digital_b_4.yy",},},},"Disabled":false,"id":"0e7254b5-26df-4422-92af-6f95b7be0f51","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

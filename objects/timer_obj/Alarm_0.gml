@@ -20,8 +20,6 @@ if (global.levelTimeSeconds<= 0){
 			}
 		}
 
-		
-		//endGameSetup()
 	}	
 }else{
 	global.levelTimeSeconds--

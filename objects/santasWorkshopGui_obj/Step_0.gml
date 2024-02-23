@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(layer_exists("endLevel")){
+	if(alarm[0] == -1){
+		alarm[0] = 30
+	}	
+}
 
 
 if(layer_exists("endLevel") &&layer_sequence_get_headpos(global.endLayerId) == layer_sequence_get_length(global.endLayerId) ){
@@ -20,7 +25,9 @@ if(layer_exists("endLevel") &&layer_sequence_get_headpos(global.endLayerId) == l
 }
 
 
-
+if(global.health == 0 && !layer_exists("levelFail")){
+	levelFailGui()
+}
 
 
 

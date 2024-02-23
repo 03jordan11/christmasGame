@@ -8,7 +8,7 @@ global.checkedTime = 0
 global.timeSpaceHeld = 0
 global.spaceHeldStart = -1
 global.timerStart = -1
-global.levelTimeSeconds = 10
+global.levelTimeSeconds = 60
 
 //player
 global.playerName = 0
@@ -46,6 +46,7 @@ global.cocoIsMaking = false
 global.cocoMakingTime = 10
 global.cocoIsReady = false
 global.leversEnabled = true
+global.health = 5
 
 global.spriteSpeed = 10
 

@@ -16,3 +16,8 @@ if (endScoreInPosition){
 	}
 
 }
+if(layer_exists("levelFail") && layer_sequence_get_headpos(global.laySeq) == layer_sequence_get_length(global.laySeq)){
+	show_debug_message("im inside level fail finish event")
+	levelFailInputGui()
+}
+draw_bells()
