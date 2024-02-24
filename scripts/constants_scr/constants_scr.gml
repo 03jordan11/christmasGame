@@ -11,3 +11,5 @@ enum GameOption {
 	SELECTED,
 	VALUES
 }
+
+global.MAX_LEVEL_TIME = 60
