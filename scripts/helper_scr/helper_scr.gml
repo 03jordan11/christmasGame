@@ -21,16 +21,16 @@ function spawnToys(conveyorId){
 	yPos = 0
 	switch(conveyorId){
 		case 0:
-			yPos = 192
+			yPos = 182
 			break
 		case 1:
-			yPos = 342
+			yPos = 330
 			break
 		case 2:
-			yPos = 508
+			yPos = 483
 			break
 		case 3:
-			yPos = 658
+			yPos = 635
 			break
 	}
 	toy = instance_create_depth(xPos, yPos, -10000, global.toys[irandom(4)], {conveyorToyId: conveyorId})
