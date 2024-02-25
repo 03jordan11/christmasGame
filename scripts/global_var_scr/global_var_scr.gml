@@ -63,3 +63,6 @@ global.continueText = "Continue"
 
 //positions
 global.bagPosition = [1135, 320]
+
+global.soundEmitter = audio_emitter_create()
+global.musicEmitter = audio_emitter_create()

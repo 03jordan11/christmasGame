@@ -24,6 +24,7 @@
     {"name":"inst_4A10CC60","path":"rooms/SantasWorkshop/SantasWorkshop.yy",},
     {"name":"inst_18CA20B8","path":"rooms/SantasWorkshop/SantasWorkshop.yy",},
     {"name":"inst_5A4C397C","path":"rooms/SantasWorkshop/SantasWorkshop.yy",},
+    {"name":"inst_120602CB","path":"rooms/SantasWorkshop/SantasWorkshop.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -45,6 +46,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A10CC60","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":513.0,"y":496.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18CA20B8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":513.0,"y":646.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A4C397C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"storyScriptGui_obj","path":"objects/storyScriptGui_obj/storyScriptGui_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_120602CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"music_manager_obj","path":"objects/music_manager_obj/music_manager_obj.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"room_spr","path":"sprites/room_spr/room_spr.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
