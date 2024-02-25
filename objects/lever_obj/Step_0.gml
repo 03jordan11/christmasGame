@@ -6,9 +6,16 @@ if (!global.conveyersOn[lever_id] && !global.isPaused){
 }
 
 if (global.conveyersOn[lever_id] && !global.isPaused){
+	flash = false
 	sprite_index = lever_on_spr
 }
 
+if (flash && alarm[3] == -1){
+	alarm[3] = room_speed * 0.25
+}
+if(!flash){
+	visible = true
+}
 
 
 

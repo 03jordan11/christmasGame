@@ -13,3 +13,4 @@ enum GameOption {
 }
 
 global.MAX_LEVEL_TIME = 60
+global.LEVER_ON_TIME_SECONDS = 10

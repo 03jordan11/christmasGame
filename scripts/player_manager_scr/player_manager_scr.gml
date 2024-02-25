@@ -119,8 +119,19 @@ function pressLever(player){
 	if (pullLeverInput()){
 		lever = isLeverBelow(player)
 		if(lever != noone){
-			if(numLeversOn() > 1){
+			if(global.conveyersOn[lever.lever_id] && numLeversOn() > 1){
 				allLeversOn()
+			}
+			//If you are turning the lever on, star an alarm that will turn levers off after so long
+			if(global.conveyersOn[lever.lever_id] == true){
+				if(lever.alarm[0] == -1){
+					lever.alarm[0] = 60 * global.LEVER_ON_TIME_SECONDS
+					lever.alarm[1] = 60 * (global.LEVER_ON_TIME_SECONDS - 3)
+				}
+			}else{
+				lever.alarm[0] = -1
+				lever.alarm[1] = -1
+				lever.flash = false
 			}
 			global.conveyersOn[lever.lever_id] = !global.conveyersOn[lever.lever_id]
 		}

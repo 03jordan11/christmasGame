@@ -75,7 +75,9 @@ function endGameSetup(isLevelFailed = false){
 	//if endless mode, do somethings
 	//if last level, do something else
 	if(global.currentLevel == -1){
-		//DO ENDLESS MODE STUFF
+		global.health = 5
+		global.score = 0
+		endWrapping()
 	}
 	else if(global.currentLevel == 5){
 		global.levelTimeSeconds = global.MAX_LEVEL_TIME
