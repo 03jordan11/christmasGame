@@ -11,8 +11,9 @@ if (global.isPaused){
 if (self.x >= 500 && !global.isPaused){
 	self.sprite_index = wrapping_spr
 	image_blend = make_color_rgb(128, 128, 128)
-	
-	
+	if(droppingSound == ""){
+		droppingSound = audio_play_sound_on(global.sfxEmitter, jingle_bells, false, 1)
+	}		
 }
 else{
 	if(!global.isPaused && global.conveyersOn[conveyorToyId]){

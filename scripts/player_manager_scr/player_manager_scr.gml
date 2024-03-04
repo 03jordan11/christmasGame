@@ -119,6 +119,7 @@ function pressLever(player){
 	if (pullLeverInput()){
 		lever = isLeverBelow(player)
 		if(lever != noone){
+			audio_play_sound_on(global.sfxEmitter,lever_pull, false, 1)
 			if(global.conveyersOn[lever.lever_id] && numLeversOn() > 1){
 				allLeversOn()
 			}
