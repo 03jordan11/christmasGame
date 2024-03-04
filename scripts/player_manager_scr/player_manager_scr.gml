@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+global.wrappingSound = ""
 function movePlayer(player){
 	switch(global.location){
 		case 1:
@@ -26,6 +27,7 @@ function wrapPresent(player){
 		//can start wrapping if toy exists below
 		var toy = isToyBelow(player)
 		if (toy != noone){			
+			global.wrappingSound = audio_play_sound_on(global.sfxEmitter, wrap_present_snd, true, 1)
 			global.playerCanMove = false
 			global.playerIsWrapping = true
 			global.elfAnim = "wrapping"
@@ -43,6 +45,9 @@ function wrapPresent(player){
 				global.elfAnim = "idle"
 				instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
 				instance_destroy(smoke_obj)
+				if(global.wrappingSound != noone){
+					audio_stop_sound(global.wrappingSound)
+				}
 			}
 		}
 		else{
@@ -55,7 +60,9 @@ function wrapPresent(player){
 				global.spaceHeldStart = -1
 				instance_create_depth(smoke_obj.x, smoke_obj.y, -10001, present_obj)
 				instance_destroy(smoke_obj)
-
+				if(global.wrappingSound != noone){
+					audio_stop_sound(global.wrappingSound)
+				}
 			}
 		}
 	}

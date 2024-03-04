@@ -90,6 +90,7 @@
     {"id":{"name":"Deck_the_Halls__Jingle_Punks__No_Copyright_Music_","path":"sounds/Deck_the_Halls__Jingle_Punks__No_Copyright_Music_/Deck_the_Halls__Jingle_Punks__No_Copyright_Music_.yy",},},
     {"id":{"name":"smoke_obj","path":"objects/smoke_obj/smoke_obj.yy",},},
     {"id":{"name":"pause_manager_scr","path":"scripts/pause_manager_scr/pause_manager_scr.yy",},},
+    {"id":{"name":"wrap_present_snd","path":"sounds/wrap_present_snd/wrap_present_snd.yy",},},
     {"id":{"name":"main_menu_load_save_obj","path":"objects/main_menu_load_save_obj/main_menu_load_save_obj.yy",},},
     {"id":{"name":"wrapping_spr","path":"sprites/wrapping_spr/wrapping_spr.yy",},},
     {"id":{"name":"Ikson___Christmas__No_Copyright_Christmas_Music_Instrumental_","path":"sounds/Ikson___Christmas__No_Copyright_Christmas_Music_Instrumental_/Ikson___Christmas__No_Copyright_Christmas_Music_Instrumental_.yy",},},

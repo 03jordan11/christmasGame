@@ -9,6 +9,7 @@ if (global.levelTimeSeconds<= 0){
 			if(!layer_exists("endLevel")){
 				global.isPaused = true
 				var lay = layer_create(-19999, "endLevel")
+				audio_stop_sound(global.wrappingSound)
 				global.endLayerId = layer_sequence_create(lay, 0, 0, finalLevel_sq)
 			}
 		}
@@ -16,6 +17,7 @@ if (global.levelTimeSeconds<= 0){
 			if(!layer_exists("endLevel")){
 				global.isPaused = true
 				var lay = layer_create(-19999, "endLevel")
+				audio_stop_sound(global.wrappingSound)
 				global.endLayerId = layer_sequence_create(lay, 0, 0, endLevel_sq)
 			}
 		}
