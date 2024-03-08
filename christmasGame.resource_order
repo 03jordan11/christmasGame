@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -19,6 +19,7 @@
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
+    {"name":"SFX","order":2,"path":"folders/Sounds/SFX.yy",},
     {"name":"Songs","order":1,"path":"folders/Sounds/Songs.yy",},
     {"name":"Main Menu","order":1,"path":"folders/Sounds/Songs/Main Menu.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
@@ -30,9 +31,8 @@
     {"name":"toy_sprites","order":3,"path":"folders/Sprites/toy_sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"SFX","order":2,"path":"folders/Sounds/SFX.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"setting_manager_scr","order":3,"path":"scripts/setting_manager_scr/setting_manager_scr.yy",},
     {"name":"music_manager_obj","order":7,"path":"objects/music_manager_obj/music_manager_obj.yy",},
     {"name":"toy_teddy_obj","order":4,"path":"objects/toy_teddy_obj/toy_teddy_obj.yy",},
