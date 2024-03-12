@@ -5,14 +5,22 @@
 if(global.showText && displayGui){
 	draw_set_font(ARCO_script_font)
 	draw_set_color(c_dkgray)
-	var spriteWidth = sprite_get_width(text_box_spr)
-	var sidePadding = 20
-	var topPadding = 20
-	var textWidth = spriteWidth - (sidePadding * 2)
-	var sep = 1.0
 	
-	draw_sprite(text_box_spr, 0, 300, 200)
-	draw_text_ext(300 + sidePadding, 200 + topPadding, currentTextToDisplay, 28, textWidth)
+	_textHeight = string_height_ext(currentTextToDisplay, 28, _maxTextWidth - (2 * _padding))
+	_yLoc = (display_get_gui_height() - (_textHeight + (2 * _padding))) / 2;
+	
+	draw_sprite_ext(textbox_spr, 0, _xLoc, _yLoc, _maxTextWidth/_textboxSprWidth, (_textHeight+(2*_padding))/_textboxSprHeight, 0, c_white, 1)
+	
+	draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+	
+    var _textX = _xLoc + (_maxTextWidth / 2);
+    var _textY = _yLoc + ((_textHeight + (2 * _padding)) / 2);
+	
+	draw_text_ext(_textX, _textY, currentTextToDisplay, 28, _maxTextWidth - (2 * _padding))
+
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
 }
 
 
