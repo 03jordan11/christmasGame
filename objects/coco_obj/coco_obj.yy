@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"cocoa_machine_spr",
+    "path":"sprites/cocoa_machine_spr/cocoa_machine_spr.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
