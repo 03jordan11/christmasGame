@@ -54,7 +54,6 @@
   "resources":[
     {"id":{"name":"ARCO_main_menu_font","path":"fonts/ARCO_main_menu_font/ARCO_main_menu_font.yy",},},
     {"id":{"name":"ARCO_script_font","path":"fonts/ARCO_script_font/ARCO_script_font.yy",},},
-    {"id":{"name":"bell_obj","path":"objects/bell_obj/bell_obj.yy",},},
     {"id":{"name":"coco_obj","path":"objects/coco_obj/coco_obj.yy",},},
     {"id":{"name":"continue_text_obj","path":"objects/continue_text_obj/continue_text_obj.yy",},},
     {"id":{"name":"conveyer_obj","path":"objects/conveyer_obj/conveyer_obj.yy",},},

@@ -22,14 +22,20 @@ function draw_final_level(){
 function draw_bells(){
 	var startX = 800
 	var startY = 16
-	var sprWidth = 64
-	for(var i = 0; i < global.health; i++){
-		draw_sprite(bell_64,0, startX + (i * sprWidth), startY)
+	var sprWidth = 86
+	for(var i = 0; i < 5; i++){
+		if(i < global.health){
+			draw_sprite(bell_spr,0, startX + (i * sprWidth), startY)
+		}else{
+			draw_sprite(bell_blank_spr,0, startX + (i * sprWidth), startY)
+		}
 	}
 }
 
 function levelFailGui(){
-	audio_stop_sound(global.wrappingSound)
+	if(global.wrappingSound != "" && audio_exists(global.wrappingSound) && audio_is_playing(global.wrappingSound)){
+		audio_stop_sound(global.wrappingSound)
+	}
 	global.isPaused = true
 	var lay = layer_create(-19999, "levelFail")
 	global.laySeq = layer_sequence_create(lay, 0, 0, levelFail_sq)
