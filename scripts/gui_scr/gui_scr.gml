@@ -39,6 +39,7 @@ function levelFailGui(){
 	global.isPaused = true
 	var lay = layer_create(-19999, "levelFail")
 	global.laySeq = layer_sequence_create(lay, 0, 0, levelFail_sq)
+	global.isGameOver = true
 }
 
 function levelFailInputGui(){

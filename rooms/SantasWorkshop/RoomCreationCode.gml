@@ -19,5 +19,5 @@ else{
 if (global.currentLevel != -1){
 	save()
 }
-
+global.isGameOver = false
 //if level 2, disable levers
