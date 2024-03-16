@@ -24,15 +24,15 @@
   "name":"textbox_spr",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":22,
+    "bottom":28,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":22,
+    "left":27,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
-    "right":22,
+    "right":27,
     "tileMode":[
       1,
       1,
@@ -40,7 +40,7 @@
       1,
       1,
     ],
-    "top":22,
+    "top":27,
   },
   "origin":0,
   "parent":{
