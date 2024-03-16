@@ -2,12 +2,12 @@
 // You can write your code in this editor
 
 if (!global.conveyersOn[lever_id] && !global.isPaused){
-	sprite_index = lever_off_spr
+	sprite_index = lever_down_spr
 }
 
 if (global.conveyersOn[lever_id] && !global.isPaused){
 	flash = false
-	sprite_index = lever_on_spr
+	sprite_index = lever_up_spr
 }
 
 if (flash && alarm[3] == -1){

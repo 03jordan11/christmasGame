@@ -8,4 +8,3 @@ if (alarm[0] == -1 && !global.isPaused && !global.cocoIsMaking && global.cocoMac
 
 
 
-

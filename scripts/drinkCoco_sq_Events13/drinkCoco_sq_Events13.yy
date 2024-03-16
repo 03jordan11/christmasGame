@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"drinkCoco_sq_Events13",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"drinkCoco_sq_Events13",
+  "parent":{
+    "name":"christmasGame",
+    "path":"christmasGame.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

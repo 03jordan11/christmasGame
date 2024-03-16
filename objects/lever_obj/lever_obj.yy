@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"lever_on_spr",
-    "path":"sprites/lever_on_spr/lever_on_spr.yy",
+    "name":"lever_up_spr",
+    "path":"sprites/lever_up_spr/lever_up_spr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

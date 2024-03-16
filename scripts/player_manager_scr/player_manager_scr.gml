@@ -114,6 +114,12 @@ function drinkCoco(){
 		show_debug_message("drunk the coco")
 		coco_obj.alarm[1] = (global.cocoMakingTime / 2) * 60
 		//set time to wrap to lower here for so many seconds
+		if(!layer_exists("drinkCoco")){
+			global.isPaused = true
+			var lay = layer_create(-29999, "drinkCoco")
+			elf_obj.image_alpha = 0
+			global.drinkCocoLayer = layer_sequence_create(lay, 0, 0, drinkCoco_sq)
+		}
 	}
 }
 
