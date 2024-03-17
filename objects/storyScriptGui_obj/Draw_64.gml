@@ -5,7 +5,7 @@
 if(global.showText && displayGui){
 	draw_set_font(ARCO_script_font)
 	draw_set_color(c_dkgray)
-	
+	 
 	_textHeight = string_height_ext(currentTextToDisplay, 28, _maxTextWidth - (2 * _padding))
 	_yLoc = (display_get_gui_height() - (_textHeight + (2 * _padding))) / 2;
 	

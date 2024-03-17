@@ -28,6 +28,11 @@ function moveLeft(){
 	thumbstick = gamepad_axis_value(0, gp_axislh) < -.5
 	return keyboard || dPad || thumbstick
 }
+function selecItemInput(){
+	keyboard = keyboard_check_released(vk_space) || keyboard_check_released(vk_enter)
+	controller = gamepad_button_check_released(0, gp_face1)
+	return keyboard || controller
+}
 function moveRight(){
 	keyboard = keyboard_check(ord("D"))
 	dPad = gamepad_button_check(0, gp_padr)
@@ -51,12 +56,12 @@ function drinkCocoInput(){
 }
 function pullLeverInput(){
 	keyboard = keyboard_check_released(ord("E"))
-	controller = gamepad_button_check(0, gp_face3)
+	controller = gamepad_button_check_released(0, gp_face3)
 	return keyboard || controller
 }
 function cancelInput(){
 	keyboard = keyboard_check_released(vk_escape)
-	controller = gamepad_button_check(0, gp_face2)
+	controller = gamepad_button_check_released(0, gp_face2)
 	return keyboard || controller
 }
 function anyInput(){

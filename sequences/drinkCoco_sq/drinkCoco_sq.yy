@@ -34,7 +34,7 @@
           "0":{"$MomentsEventKeyframe":"","Events":[
               "drinkCoco_sq_Moment",
             ],"resourceType":"MomentsEventKeyframe","resourceVersion":"2.0",},
-        },"Disabled":false,"id":"91783317-f498-46dd-b14e-aee581d753fe","IsCreationKey":false,"Key":119.9998,"Length":1.0,"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+        },"Disabled":false,"id":"7f4fadec-dc79-49f9-b752-1659c4403640","IsCreationKey":false,"Key":119.9999,"Length":1.0,"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
     ],
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
