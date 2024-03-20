@@ -9,6 +9,7 @@ if (displayGui && anyInput()){
 		currentTextToDisplay = global.storyScripts[global.currentLevel-1][currTextOrder]
 	}
 	else{
+		global.pauseDisabled = false
 		displayGui = false
 		global.isPaused = false
 	}

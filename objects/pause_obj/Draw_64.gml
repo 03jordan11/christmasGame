@@ -12,7 +12,7 @@ if(global.isPaused && global.pressedPause){
 
 	// Calculate the dimensions of the pause menu
 	var _menuWidth = 550;
-	var _menuHeight = string_height(_options[1])/1.4 * array_length(_options);
+	var _menuHeight = string_height(_options[1])/1.1 * array_length(_options);
 
 	// Calculate the top-left position of the pause menu
 	var _menuX = _roomCenterX - (_menuWidth / 2);
@@ -24,32 +24,39 @@ if(global.isPaused && global.pressedPause){
 		var sprWidth = 600
 		var sprHeight = _menuY + 64*3
 		draw_sprite_stretched_ext(textbox_spr,0,_menuX, _menuY, sprWidth, sprHeight, c_white, 1)
-		
+		_menuY +=16
 		var sprPadding = 28
 		
 		draw_text_transformed(_menuX + sprPadding, _menuY+ sprPadding, "Movement", .5, .5, 0)
 		var textWidth = string_width("Movement") * .5
-		draw_sprite(W_Key, 0, _menuX + sprPadding + textWidth + 32, _menuY+ sprPadding -8)
-		draw_sprite(A_Key, 0, _menuX + sprPadding + textWidth , _menuY+ sprPadding+24)
-		draw_sprite(S_Key, 0, _menuX + sprPadding + textWidth + 32, _menuY+ sprPadding+24)
-		draw_sprite(D_Key, 0, _menuX + sprPadding + textWidth + 64, _menuY+ sprPadding+24)
-		draw_sprite(button_xboxone_analog_l_direction_11, 0, _menuX + sprPadding + textWidth + 96, _menuY + sprPadding)
-		draw_sprite(button_xboxone_dpad_light_7, 0, _menuX + sprPadding + textWidth + 160, _menuY + sprPadding)
+		var farRight = _menuX + sprPadding + textWidth + 16
+		draw_sprite(W_Key, 0, farRight + 32, _menuY+ sprPadding -8)
+		draw_sprite(A_Key, 0, farRight , _menuY+ sprPadding+24)
+		draw_sprite(S_Key, 0, farRight + 32, _menuY+ sprPadding+24)
+		draw_sprite(D_Key, 0, farRight + 64, _menuY+ sprPadding+24)
+		draw_sprite(button_xboxone_analog_l_direction_11, 0, farRight + 96, _menuY + sprPadding)
+		draw_sprite(button_xboxone_dpad_light_7, 0, farRight + 160, _menuY + sprPadding)
 		
-		draw_text_transformed(_menuX+ sprPadding, _menuY+ sprPadding + 64, "Wrapping", .5, .5, 0)
+		var wrappingY = 78 + _menuY + sprPadding
+		var wrappingX = _menuX+ sprPadding
+		draw_text_transformed(wrappingX, wrappingY, "Wrapping", .5, .5, 0)
 		var textWidth = string_width("Wrapping") * .5
-		draw_sprite(Space_Key, 0, _menuX+ sprPadding + textWidth, _menuY+ sprPadding + 64 + 16)
-		draw_sprite(button_xbox_digital_a_4, 0, _menuX+ sprPadding + textWidth + 64, _menuY+ sprPadding + 64)
+		draw_sprite(Space_Key, 0, farRight, wrappingY + 16)
+		draw_sprite(button_xbox_digital_a_4, 0, farRight + 64, wrappingY)
 		
-		draw_text_transformed(_menuX+ sprPadding, _menuY+ sprPadding + 64*2, "Coco", .5, .5, 0)
+		var cocoX =_menuX+ sprPadding
+		var cocoY = _menuY+ sprPadding + 78*2
+		draw_text_transformed(cocoX, cocoY, "Coco", .5, .5, 0)
 		var textWidth = string_width("Coco") * .5
-		draw_sprite(X_Key,0, _menuX+ sprPadding + textWidth, _menuY+ sprPadding + 64*2 + 16)
-		draw_sprite(button_xbox_digital_y_4, 0, _menuX+ sprPadding + textWidth + 32, _menuY+ sprPadding + 64*2)
+		draw_sprite(X_Key,0, farRight, cocoY + 16)
+		draw_sprite(button_xbox_digital_y_4, 0, farRight + 32, cocoY)
 		
-		draw_text_transformed(_menuX+ sprPadding, _menuY+ sprPadding + 64*3, "Levers", .5, .5, 0)
+		var leverX = _menuX+ sprPadding
+		var leverY = _menuY+ sprPadding + 78*3
+		draw_text_transformed(leverX, leverY, "Levers", .5, .5, 0)
 		var textWidth = string_width("Levers") * .5
-		draw_sprite(E_Key,0,_menuX+ sprPadding + textWidth, _menuY+ sprPadding + 64*3 + 16 )
-		draw_sprite(button_xbox_digital_x_4,0,_menuX+ sprPadding + textWidth + 32, _menuY+ sprPadding + 64*3)
+		draw_sprite(E_Key,0,farRight, leverY + 16 )
+		draw_sprite(button_xbox_digital_x_4,0,farRight + 32, leverY)
 	
 	}
 	else{
@@ -57,15 +64,18 @@ if(global.isPaused && global.pressedPause){
 		draw_sprite_stretched_ext(textbox_spr, 0, _menuX, _menuY, _menuWidth, _menuHeight, c_white, 1)
 		//draw options	
 		var _textHeight = 0
-		var _textPadding = 10
+		var _textPadding = 32
 		for(var i = 0; i < array_length(_options); i++){
+			var yVal = _menuY + _textHeight + 28
+			var xVal = _menuX + 28 + 16
 			if(i == _selected){
-				draw_circle(_menuX+32, _menuY + _textHeight + 32 + 32, 10, false)
-				draw_text_transformed(_menuX + 28 + 32, _menuY + _textHeight + 28, _options[i], .6, .6, 0)
+				var circleY = 4+32
+				draw_circle(xVal + 4, yVal + circleY, 10, false)
+				draw_text_transformed(xVal + 32, yVal, _options[i], .6, .6, 0)
 				var _optionWidth = string_width(_options[i])/2
 				var _yValue = _menuY + _textHeight + 80
 			}else{
-				draw_text_transformed(_menuX + 28, _menuY + _textHeight + 28, _options[i], .5, .5, 0)
+				draw_text_transformed(xVal, yVal, _options[i], .5, .5, 0)
 			}
 			_textHeight += string_height(_options[i])/2 + _textPadding
 		}

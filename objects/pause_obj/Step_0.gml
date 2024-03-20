@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(pauseInput()){
+if(pauseInput() && !global.pauseDisabled){
 	if(_howToPlayEnabled){
 		_howToPlayEnabled = false
 	}else{
