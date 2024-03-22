@@ -21,15 +21,15 @@ if(global.isPaused && global.pressedPause){
 	
 	if(_howToPlayEnabled){
 	
-		var sprWidth = 600
-		var sprHeight = _menuY + 64*3
+		var sprWidth = 620
+		var sprHeight = _menuY + 64*4 - 28
 		draw_sprite_stretched_ext(textbox_spr,0,_menuX, _menuY, sprWidth, sprHeight, c_white, 1)
 		_menuY +=16
 		var sprPadding = 28
 		
 		draw_text_transformed(_menuX + sprPadding, _menuY+ sprPadding, "Movement", .5, .5, 0)
 		var textWidth = string_width("Movement") * .5
-		var farRight = _menuX + sprPadding + textWidth + 16
+		var farRight = _menuX + sprPadding + textWidth + 16 + 20
 		draw_sprite(W_Key, 0, farRight + 32, _menuY+ sprPadding -8)
 		draw_sprite(A_Key, 0, farRight , _menuY+ sprPadding+24)
 		draw_sprite(S_Key, 0, farRight + 32, _menuY+ sprPadding+24)

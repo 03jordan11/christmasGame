@@ -69,3 +69,8 @@ function anyInput(){
 	controller = gamepad_button_check_released(0, gp_face1) || gamepad_button_check_released(0, gp_face2) || gamepad_button_check_released(0, gp_face3) || gamepad_button_check_released(0, gp_face4)
 	return keyboard || controller
 }
+function menuSelectInput(){
+	keyboard = keyboard_check_released(vk_enter)
+	controller = gamepad_button_check_released(0, gp_face1)
+	return keyboard || controller
+}
