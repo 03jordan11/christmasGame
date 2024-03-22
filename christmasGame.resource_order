@@ -114,6 +114,7 @@
     {"name":"cocoa_machine_spr","order":14,"path":"sprites/cocoa_machine_spr/cocoa_machine_spr.yy",},
     {"name":"conveyor_spr","order":1,"path":"sprites/conveyor_spr/conveyor_spr.yy",},
     {"name":"cursor","order":5,"path":"sprites/cursor/cursor.yy",},
+    {"name":"cursor71","order":20,"path":"sprites/cursor71/cursor71.yy",},
     {"name":"D_Key","order":1,"path":"sprites/D_Key/D_Key.yy",},
     {"name":"decrease_setting_spr","order":1,"path":"sprites/decrease_setting_spr/decrease_setting_spr.yy",},
     {"name":"doll_spr","order":1,"path":"sprites/doll_spr/doll_spr.yy",},

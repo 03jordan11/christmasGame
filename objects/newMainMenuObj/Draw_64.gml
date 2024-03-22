@@ -17,6 +17,9 @@ for (var i = 0; i < array_length(menuOptions); i++){
 	var isHovering = point_in_rectangle(mouse_x, mouse_y, textX1, textY1, textX2, textY2)
 	if(isHovering){
 		selectedIndex = i
+		if(mouse_check_button_pressed(mb_left)){
+			selectActions[i]()
+		}
 	}
 	
 	//drawing seleccted box

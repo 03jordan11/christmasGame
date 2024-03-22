@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+cursor_sprite = cursor71
+
 
 canContinue = global.currentLevel != -1
 menuOptions = []

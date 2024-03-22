@@ -149,6 +149,7 @@
     {"id":{"name":"cocoa_machine_spr","path":"sprites/cocoa_machine_spr/cocoa_machine_spr.yy",},},
     {"id":{"name":"conveyor_spr","path":"sprites/conveyor_spr/conveyor_spr.yy",},},
     {"id":{"name":"cursor","path":"sprites/cursor/cursor.yy",},},
+    {"id":{"name":"cursor71","path":"sprites/cursor71/cursor71.yy",},},
     {"id":{"name":"D_Key","path":"sprites/D_Key/D_Key.yy",},},
     {"id":{"name":"decrease_setting_spr","path":"sprites/decrease_setting_spr/decrease_setting_spr.yy",},},
     {"id":{"name":"doll_spr","path":"sprites/doll_spr/doll_spr.yy",},},
