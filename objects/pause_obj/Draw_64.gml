@@ -59,7 +59,7 @@ if(global.isPaused && global.pressedPause){
 		draw_sprite(button_xbox_digital_x_4,0,farRight + 32, leverY)
 	
 	}
-	else{
+	else if(!_settingsMenuEnabled){
 		//draw background
 		draw_sprite_stretched_ext(textbox_spr, 0, _menuX, _menuY, _menuWidth, _menuHeight, c_white, 1)
 		//draw options	
@@ -97,13 +97,17 @@ if(global.isPaused && global.pressedPause){
 					endGameSetup(true)
 					room_restart()
 					break;
-				case 2: 
+				case 2:
+					instance_create_layer(0, 0, "Instances",newSettings_obj)
+					_settingsMenuEnabled = true
+					break
+				case 3: 
 					//how to play
 					_howToPlayEnabled = true
 					break;
-				case 3:
+				case 4:
 					//quit
-					room_goto(MainMenu)
+					room_goto(NewMainMenu)
 			}
 		}
 	}

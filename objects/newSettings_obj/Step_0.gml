@@ -15,6 +15,10 @@ if(settingsRightInput()){
 	save()
 }
 if(backInput()){
-	instance_create_layer(0, 0, "Instances", newMainMenuObj)
+	if(room = NewMainMenu){
+		instance_create_layer(0, 0, "Instances", newMainMenuObj)
+	}else{
+		pause_obj._settingsMenuEnabled = false
+	}
 	instance_destroy(self)
 }

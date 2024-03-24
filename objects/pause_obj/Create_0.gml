@@ -4,4 +4,5 @@ global.pressedPause = false
 
 _howToPlayEnabled = false
 _selected = 0
-_options = ["Resume", "Restart", "How to Play", "Quit"]
+_settingsMenuEnabled = false
+_options = ["Resume", "Restart", "Settings", "How to Play", "Quit"]

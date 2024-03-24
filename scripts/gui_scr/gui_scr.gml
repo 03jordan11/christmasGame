@@ -34,14 +34,16 @@ function draw_final_level(){
 }
 
 function draw_bells(){
-	var startX = 800
-	var startY = 16
-	var sprWidth = 86
-	for(var i = 0; i < 5; i++){
-		if(i < global.health){
-			draw_sprite(bell_spr,0, startX + (i * sprWidth), startY)
-		}else{
-			draw_sprite(bell_blank_spr,0, startX + (i * sprWidth), startY)
+	if(!pause_obj._settingsMenuEnabled){
+		var startX = 800
+		var startY = 16
+		var sprWidth = 86
+		for(var i = 0; i < 5; i++){
+			if(i < global.health){
+				draw_sprite(bell_spr,0, startX + (i * sprWidth), startY)
+			}else{
+				draw_sprite(bell_blank_spr,0, startX + (i * sprWidth), startY)
+			}
 		}
 	}
 }
