@@ -74,3 +74,18 @@ function menuSelectInput(){
 	controller = gamepad_button_check_released(0, gp_face1)
 	return keyboard || controller
 }
+function settingsLeftInput(){
+	keyboard = keyboard_check_released(ord("A")) || keyboard_check_released(vk_left)
+	controller = gamepad_button_check_released(0, gp_padl)
+	return keyboard || controller
+}
+function settingsRightInput(){
+	keyboard = keyboard_check_released(ord("D")) || keyboard_check_released(vk_right)
+	controller = gamepad_button_check_released(0, gp_padr)
+	return keyboard || controller
+}
+function backInput(){
+	keyboard = keyboard_check_released(vk_escape)
+	controller = gamepad_button_check_released(0, gp_face2)
+	return keyboard || controller
+}

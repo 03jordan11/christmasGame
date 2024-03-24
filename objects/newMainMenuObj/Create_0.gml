@@ -2,7 +2,7 @@
 // You can write your code in this editor
 cursor_sprite = cursor71
 
-
+load(global.saveFileName)
 canContinue = global.currentLevel != -1
 menuOptions = []
 if (canContinue){
@@ -31,6 +31,8 @@ selectActions = [
 		room_goto(SantasWorkshop)
 	},
 	function(){
+		instance_destroy(self)
+		instance_create_layer(0, 0, "Instances", newSettings_obj)
 		show_debug_message("Open settings menu")
 	},
 	function(){

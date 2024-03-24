@@ -4,7 +4,7 @@
 levelMusic = [Carol_Of_The_Bells__Audionautix__No_Copyright_Music_, Christmas_Music___No_Copyright_Music__Free_Download_, Deck_the_Halls__Jingle_Punks__No_Copyright_Music_, Happy_Christmas_Background_Music_For_Videos, Jingle_Bells__Kevin_MacLeod__No_Copyright_Music_]
 currentSongIndex = 0
 
-if (room == MainMenu){
+if (room == NewMainMenu){
 	audio_stop_all()
 	audio_play_sound_on(global.musicEmitter, Ikson___Christmas__No_Copyright_Christmas_Music_Instrumental_, true, 1)
 }
