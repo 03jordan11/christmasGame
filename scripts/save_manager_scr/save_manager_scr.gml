@@ -69,7 +69,7 @@ function getallSaves(){
 *is highlighted indicating they can use it
 */
 function canContinue(){
-	return false
+	return global.currentLevel != -1
 }
 
 function doesSaveExist(){

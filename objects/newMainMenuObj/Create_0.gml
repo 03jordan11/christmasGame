@@ -3,12 +3,10 @@
 cursor_sprite = cursor71
 
 load(global.saveFileName)
-canContinue = global.currentLevel != -1
-menuOptions = []
-if (canContinue){
-	menuOptions = ["Continue", "Endless Mode", "Settings", "Exit"]
-}else{
-	menuOptions = ["Start", "Endless Mode", "Settings", "Exit"]
+menuOptions = ["Start", "Endless Mode", "Settings", "Exit"]
+
+if(canContinue()){
+	array_insert(menuOptions, 0, "Continue")
 }
 selectedIndex = 0
 
@@ -21,7 +19,7 @@ padding = 16
 
 selectActions = [
 	function () {
-		if(!canContinue){
+		if(!canContinue()){
 			global.currentLevel = 1
 		}
 		room_goto(SantasWorkshop)
@@ -39,3 +37,11 @@ selectActions = [
 		game_end()
 	}
 ]
+
+if(canContinue()){
+	var continueFunc = function(){
+		room_goto(SantasWorkshop)
+	}
+	
+	array_insert(selectActions, 0, continueFunc)
+}
