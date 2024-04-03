@@ -22,7 +22,7 @@ if(global.isPaused && global.pressedPause){
 	if(_howToPlayEnabled){
 	
 		var sprWidth = 620
-		var sprHeight = _menuY + 64*4 - 28
+		var sprHeight = _menuY + 64*5 - 28
 		draw_sprite_stretched_ext(textbox_spr,0,_menuX, _menuY, sprWidth, sprHeight, c_white, 1)
 		_menuY +=16
 		var sprPadding = 28
@@ -69,9 +69,9 @@ if(global.isPaused && global.pressedPause){
 			var yVal = _menuY + _textHeight + 28
 			var xVal = _menuX + 28 + 16
 			if(i == _selected){
-				var circleY = 4+32
-				draw_circle(xVal + 4, yVal + circleY, 10, false)
-				draw_text_transformed(xVal + 32, yVal, _options[i], .6, .6, 0)
+				var opt = "~" + _options[i] + "~"
+				var col = make_color_rgb(128,0,0)
+				draw_text_transformed_color(xVal - 16, yVal, opt, .6, .6, 0,col, col, col, col, 1)
 				var _optionWidth = string_width(_options[i])/2
 				var _yValue = _menuY + _textHeight + 80
 			}else{
