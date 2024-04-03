@@ -68,6 +68,23 @@ if(global.isPaused && global.pressedPause){
 		for(var i = 0; i < array_length(_options); i++){
 			var yVal = _menuY + _textHeight + 28
 			var xVal = _menuX + 28 + 16
+			
+			var textX1 = xVal
+			var textX2 = xVal + string_width(_options[i])/2
+			var textY1 = yVal
+			var textY2 = yVal + string_height(_options[i])/2	
+			
+			draw_rectangle(textX1, textY1, textX2, textY2, true)
+			
+			var isHovering = point_in_rectangle(mouse_x, mouse_y, textX1, textY1, textX2, textY2)
+			if(isHovering){
+				_selected = i
+				if(mouse_check_button_pressed(mb_left)){
+					_actions(_selected)
+				}
+			}
+			
+			
 			if(i == _selected){
 				var opt = "~" + _options[i] + "~"
 				var col = make_color_rgb(128,0,0)
@@ -86,29 +103,7 @@ if(global.isPaused && global.pressedPause){
 		}
 	
 		if(selecItemInput()){
-			switch(_selected){
-				case 0:
-					//resume game
-					global.isPaused = false
-					global.pressedPause = false
-					break;
-				case 1:
-					//restart level
-					endGameSetup(true)
-					room_restart()
-					break;
-				case 2:
-					instance_create_layer(0, 0, "Instances",newSettings_obj)
-					_settingsMenuEnabled = true
-					break
-				case 3: 
-					//how to play
-					_howToPlayEnabled = true
-					break;
-				case 4:
-					//quit
-					room_goto(NewMainMenu)
-			}
+			_actions(_selected)
 		}
 	}
 	
