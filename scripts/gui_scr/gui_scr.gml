@@ -29,7 +29,7 @@ function draw_final_level(){
 	draw_sprite(button_xbox_digital_a_4, 0, 855, 640)
 	if (wrapPresentInput()){
 		endGameSetup()
-		room_goto(MainMenu)
+		room_goto(NewMainMenu)
 	}
 }
 
@@ -83,6 +83,6 @@ function levelFailInputGui(){
 	draw_sprite(button_xbox_digital_b_4, 0, 1000, 640)
 	if(cancelInput()){
 		endGameSetup(true)
-		room_goto(MainMenu)
+		room_goto(NewMainMenu)
 	}
 }

@@ -3,7 +3,7 @@
 global.previousThumbstickUp = false
 global.previousThumbstickDown = false
 function moveUp(){
-	keyboard = keyboard_check_released(ord("W"))
+	keyboard = keyboard_check_released(ord("W")) || keyboard_check_released(vk_up)
 	dPad = gamepad_button_check_released(0, gp_padu)
 	thumbstick = false
 	if(!global.previousThumbstickUp && gamepad_axis_value(0, gp_axislv) < -.5){
@@ -13,7 +13,7 @@ function moveUp(){
 	return keyboard || dPad || thumbstick
 }
 function moveDown(){
-	keyboard = keyboard_check_released(ord("S"))
+	keyboard = keyboard_check_released(ord("S")) || keyboard_check_released(vk_down)
 	dPad = gamepad_button_check_released(0, gp_padd)
 	thumbstick = false
 	if(!global.previousThumbstickDown && gamepad_axis_value(0, gp_axislv) > .5){
