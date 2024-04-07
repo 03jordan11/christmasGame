@@ -39,6 +39,7 @@
   "ResourceOrderSettings":[
     {"name":"ARCO_main_menu_font","order":2,"path":"fonts/ARCO_main_menu_font/ARCO_main_menu_font.yy",},
     {"name":"ARCO_script_font","order":3,"path":"fonts/ARCO_script_font/ARCO_script_font.yy",},
+    {"name":"calendar_font","order":6,"path":"fonts/calendar_font/calendar_font.yy",},
     {"name":"mainMenu_font","order":4,"path":"fonts/mainMenu_font/mainMenu_font.yy",},
     {"name":"settingsOptions_font","order":5,"path":"fonts/settingsOptions_font/settingsOptions_font.yy",},
     {"name":"coco_obj","order":4,"path":"objects/coco_obj/coco_obj.yy",},
@@ -52,6 +53,7 @@
     {"name":"music_manager_obj","order":7,"path":"objects/music_manager_obj/music_manager_obj.yy",},
     {"name":"newMainMenuObj","order":6,"path":"objects/newMainMenuObj/newMainMenuObj.yy",},
     {"name":"newSettings_obj","order":7,"path":"objects/newSettings_obj/newSettings_obj.yy",},
+    {"name":"obj_calendar","order":4,"path":"objects/obj_calendar/obj_calendar.yy",},
     {"name":"pause_obj","order":3,"path":"objects/pause_obj/pause_obj.yy",},
     {"name":"santasWorkshopGui_obj","order":2,"path":"objects/santasWorkshopGui_obj/santasWorkshopGui_obj.yy",},
     {"name":"settings_text_obj","order":3,"path":"objects/settings_text_obj/settings_text_obj.yy",},
@@ -93,7 +95,6 @@
     {"name":"bell_blank_spr","order":9,"path":"sprites/bell_blank_spr/bell_blank_spr.yy",},
     {"name":"bell_spr","order":10,"path":"sprites/bell_spr/bell_spr.yy",},
     {"name":"button_xbox_digital_b_4","order":1,"path":"sprites/button_xbox_digital_b_4/button_xbox_digital_b_4.yy",},
-    {"name":"xbox_b_32x32","order":7,"path":"sprites/xbox_b_32x32/xbox_b_32x32.yy",},
     {"name":"button_xbox_digital_x_4","order":6,"path":"sprites/button_xbox_digital_x_4/button_xbox_digital_x_4.yy",},
     {"name":"button_xbox_digital_y_4","order":5,"path":"sprites/button_xbox_digital_y_4/button_xbox_digital_y_4.yy",},
     {"name":"button_xboxone_analog_l_direction_11","order":4,"path":"sprites/button_xboxone_analog_l_direction_11/button_xboxone_analog_l_direction_11.yy",},
@@ -152,5 +153,6 @@
     {"name":"window_night_spr","order":5,"path":"sprites/window_night_spr/window_night_spr.yy",},
     {"name":"wrapping_spr","order":3,"path":"sprites/wrapping_spr/wrapping_spr.yy",},
     {"name":"X_Key","order":4,"path":"sprites/X_Key/X_Key.yy",},
+    {"name":"xbox_b_32x32","order":7,"path":"sprites/xbox_b_32x32/xbox_b_32x32.yy",},
   ],
 }
