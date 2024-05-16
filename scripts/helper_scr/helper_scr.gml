@@ -67,6 +67,7 @@ function throwPresent(startX, startY, present){
 	}
 	
 	if (present.x == global.bagPosition[0] && present.y == global.bagPosition[1]){
+		audio_play_sound_on(global.sfxEmitter, presentDrop, false, 1)
 		instance_destroy(present)
 	}
 }

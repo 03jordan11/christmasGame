@@ -54,6 +54,23 @@
   "spriteId":null,
   "timeUnits":1,
   "tracks":[
+    {"$GMAudioTrack":"","%Name":"drinkingCoco","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AudioKeyframe>":"","Keyframes":[
+          {"$Keyframe<AudioKeyframe>":"","Channels":{
+              "0":{"$AudioKeyframe":"","Id":{"name":"drinkingCoco","path":"sounds/drinkingCoco/drinkingCoco.yy",},"Mode":0,"resourceType":"AudioKeyframe","resourceVersion":"2.0",},
+            },"Disabled":false,"id":"3020cebc-98df-4d93-826a-576a753123f8","IsCreationKey":false,"Key":60.0,"Length":120.0,"resourceType":"Keyframe<AudioKeyframe>","resourceVersion":"2.0","Stretch":false,},
+        ],"resourceType":"KeyframeStore<AudioKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"drinkingCoco","resourceType":"GMAudioTrack","resourceVersion":"2.0","trackColour":4285395528,"tracks":[
+        {"$GMRealTrack":"","%Name":"position","builtinName":14,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
+              {"$Keyframe<RealKeyframe>":"","Channels":{
+                  "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-643.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                  "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-355.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"87c04554-6f80-44a4-91a3-ef0e2fa7ab51","IsCreationKey":false,"Key":60.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"position","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":0,"tracks":[],"traits":0,},
+        {"$GMRealTrack":"","%Name":"rotation","builtinName":8,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
+              {"$Keyframe<RealKeyframe>":"","Channels":{
+                  "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"3cbda8dc-575f-45cf-bb36-604c97f74c67","IsCreationKey":true,"Key":60.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":0,"tracks":[],"traits":0,},
+      ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"elf_after_drink_spr","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"elf_after_drink_spr","path":"sprites/elf_after_drink_spr/elf_after_drink_spr.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
@@ -63,7 +80,7 @@
               {"$Keyframe<RealKeyframe>":"","Channels":{
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                },"Disabled":false,"id":"e2616ea0-3503-4b61-b273-3b72b61d9136","IsCreationKey":true,"Key":59.9999,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                },"Disabled":false,"id":"e2616ea0-3503-4b61-b273-3b72b61d9136","IsCreationKey":true,"Key":60.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"origin","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4282970841,"tracks":[],"traits":0,},
         {"$GMRealTrack":"","%Name":"position","builtinName":14,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -74,13 +91,13 @@
         {"$GMRealTrack":"","%Name":"rotation","builtinName":8,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                },"Disabled":false,"id":"d1e05417-5586-4359-b60e-e93a93fbc5c4","IsCreationKey":true,"Key":59.9999,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                },"Disabled":false,"id":"d1e05417-5586-4359-b60e-e93a93fbc5c4","IsCreationKey":true,"Key":60.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4282970841,"tracks":[],"traits":0,},
         {"$GMRealTrack":"","%Name":"scale","builtinName":15,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":1.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":1.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                },"Disabled":false,"id":"d0ee4d33-139b-4ffc-9b1a-c166b2d726a9","IsCreationKey":true,"Key":59.9999,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                },"Disabled":false,"id":"d0ee4d33-139b-4ffc-9b1a-c166b2d726a9","IsCreationKey":true,"Key":60.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"scale","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4282970841,"tracks":[],"traits":0,},
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"elf_drink_spr","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
