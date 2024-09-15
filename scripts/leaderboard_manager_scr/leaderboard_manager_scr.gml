@@ -8,6 +8,5 @@ global.leaderboard_id = -1;             // Leaderboard ID handle
 /// @function submit_score_to_steam()
 /// @description Finds or creates the leaderboard and submits the player's score.
 function submit_score_to_steam() {
-	show_debug_message("inside submit score function")
 	var temp = steam_upload_score(global.leaderboard_name, 180)
 }

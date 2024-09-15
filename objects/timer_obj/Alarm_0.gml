@@ -7,6 +7,7 @@ if (global.levelTimeSeconds<= 0){
 	if(global.currentLevel != -1){
 		if(global.currentLevel == 5){
 			if(!layer_exists("endLevel")){
+				// TODO Remove me
 				upload_ID = steam_upload_score("time", global.score)
 				global.isPaused = true
 				var lay = layer_create(-19999, "endLevel")
@@ -19,7 +20,7 @@ if (global.levelTimeSeconds<= 0){
 		}
 		else{
 			if(!layer_exists("endLevel")){
-				show_debug_message(global.score)
+				// TODO Remove me
 				upload_ID = steam_upload_score("time", global.score)
 				global.isPaused = true
 				var lay = layer_create(-19999, "endLevel")
