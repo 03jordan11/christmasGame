@@ -73,7 +73,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"christmasGame",
   "resources":[
@@ -170,6 +170,7 @@
     {"id":{"name":"settings_text_obj","path":"objects/settings_text_obj/settings_text_obj.yy",},},
     {"id":{"name":"smoke_obj","path":"objects/smoke_obj/smoke_obj.yy",},},
     {"id":{"name":"start_game_text_obj","path":"objects/start_game_text_obj/start_game_text_obj.yy",},},
+    {"id":{"name":"steam_manager_obj","path":"objects/steam_manager_obj/steam_manager_obj.yy",},},
     {"id":{"name":"storyScriptGui_obj","path":"objects/storyScriptGui_obj/storyScriptGui_obj.yy",},},
     {"id":{"name":"timer_obj","path":"objects/timer_obj/timer_obj.yy",},},
     {"id":{"name":"toy_ball_obj","path":"objects/toy_ball_obj/toy_ball_obj.yy",},},
@@ -203,10 +204,10 @@
     {"id":{"name":"helper_scr","path":"scripts/helper_scr/helper_scr.yy",},},
     {"id":{"name":"IDEAS","path":"scripts/IDEAS/IDEAS.yy",},},
     {"id":{"name":"input_manager_scr","path":"scripts/input_manager_scr/input_manager_scr.yy",},},
+    {"id":{"name":"leaderboard_manager_scr","path":"scripts/leaderboard_manager_scr/leaderboard_manager_scr.yy",},},
     {"id":{"name":"pause_manager_scr","path":"scripts/pause_manager_scr/pause_manager_scr.yy",},},
     {"id":{"name":"player_manager_scr","path":"scripts/player_manager_scr/player_manager_scr.yy",},},
     {"id":{"name":"save_manager_scr","path":"scripts/save_manager_scr/save_manager_scr.yy",},},
-    {"id":{"name":"leaderboard_manager_scr","path":"scripts/leaderboard_manager_scr/leaderboard_manager_scr.yy",},},
     {"id":{"name":"setting_manager_scr","path":"scripts/setting_manager_scr/setting_manager_scr.yy",},},
     {"id":{"name":"text_scr","path":"scripts/text_scr/text_scr.yy",},},
     {"id":{"name":"drinkCoco_sq","path":"sequences/drinkCoco_sq/drinkCoco_sq.yy",},},

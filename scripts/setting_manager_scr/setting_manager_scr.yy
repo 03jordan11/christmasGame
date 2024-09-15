@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"setting_manager_scr",
   "isCompatibility":false,
   "isDnD":false,

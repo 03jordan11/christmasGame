@@ -8,7 +8,7 @@ global.checkedTime = 0
 global.timeSpaceHeld = 0
 global.spaceHeldStart = -1
 global.timerStart = -1
-global.levelTimeSeconds = global.MAX_LEVEL_TIME
+global.levelTimeSeconds = 20// global.MAX_LEVEL_TIME
 global.pauseDisabled = false
 //player
 global.playerName = 0
