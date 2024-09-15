@@ -162,6 +162,7 @@
     {"name":"pause_manager_scr","order":1,"path":"scripts/pause_manager_scr/pause_manager_scr.yy",},
     {"name":"player_manager_scr","order":4,"path":"scripts/player_manager_scr/player_manager_scr.yy",},
     {"name":"save_manager_scr","order":2,"path":"scripts/save_manager_scr/save_manager_scr.yy",},
+    {"name":"leaderboard_manager_scr","order":10,"path":"scripts/leaderboard_manager_scr/leaderboard_manager_scr.yy",},
     {"name":"setting_manager_scr","order":3,"path":"scripts/setting_manager_scr/setting_manager_scr.yy",},
     {"name":"text_scr","order":8,"path":"scripts/text_scr/text_scr.yy",},
     {"name":"drinkCoco_sq","order":2,"path":"sequences/drinkCoco_sq/drinkCoco_sq.yy",},
