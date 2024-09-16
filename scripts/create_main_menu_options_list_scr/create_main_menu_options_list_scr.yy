@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"create_main_menu_options_list_scr",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"save_manager_scr",
   "isCompatibility":false,
   "isDnD":false,

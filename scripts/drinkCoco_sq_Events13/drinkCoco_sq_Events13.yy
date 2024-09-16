@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"drinkCoco_sq_Events13",
   "isCompatibility":false,
   "isDnD":false,

@@ -66,3 +66,10 @@ global.bagPosition = [1135, 320]
 
 global.sfxEmitter = audio_emitter_create()
 global.musicEmitter = audio_emitter_create()
+
+//steam achievments
+global.day5 = "ACH_DAY_5"
+global.day4 = "ACH_DAY_4"
+global.day3 = "ACH_DAY_3"
+global.day2 = "ACH_DAY_2"
+global.day1 = "ACH_DAY_1"
