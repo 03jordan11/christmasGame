@@ -7,3 +7,6 @@ Need to add steamworks sdk 1.55 which you can download here https://partner.stea
 
 Documentation for steam extension
 https://github.com/YoYoGames/GMEXT-Steamworks/wiki
+
+For steam function to work properly you need to add arbitrary launch options
+![image](https://github.com/user-attachments/assets/859aad72-68dc-42f7-a856-39dfb7ed5362)
