@@ -49,6 +49,18 @@ function draw_bells(){
 }
 
 function levelFailGui(){
+	//For achievements
+	if(global.currentLevel == -1){
+		steam_upload_score("time", global.score)
+		steam_set_achievement(global.endless)
+		if (global.score >= 1000){
+			steam_set_achievement(global.oneThousand)
+		}
+		if (global.score >= 10000){
+			steam_set_achievement(global.tenThousand)
+		}
+	}
+	
 	if(global.wrappingSound != "" && audio_exists(global.wrappingSound) && audio_is_playing(global.wrappingSound)){
 		audio_stop_sound(global.wrappingSound)
 	}
