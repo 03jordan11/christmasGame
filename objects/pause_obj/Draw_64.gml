@@ -74,7 +74,7 @@ if(global.isPaused && global.pressedPause){
 			var textY1 = yVal
 			var textY2 = yVal + string_height(_options[i])/2	
 			
-			draw_rectangle(textX1, textY1, textX2, textY2, true)
+			//draw_rectangle(textX1, textY1, textX2, textY2, true)
 			
 			var isHovering = point_in_rectangle(mouse_x, mouse_y, textX1, textY1, textX2, textY2)
 			if(isHovering){

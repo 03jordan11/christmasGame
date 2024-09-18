@@ -49,6 +49,29 @@ for(var i = 0; i < array_length(settings); i++){
 	draw_set_font(settingsOptions_font)
 	draw_text(optionStartX + optionTextPadding, textPosY, settings[i])
 	
+	var newX = (optionStartX - 32 + trayWidth/2) + 58
+	var newY = textPosY - 15
+	var squareSizex = 40+15
+	var squareSizey = 60
+	var arrowDistance = 320
+	//draw_rectangle(newX, newY, newX+squareSizex, newY+squareSizey, true)
+	//draw_rectangle(newX + arrowDistance, newY, newX+squareSizex + arrowDistance, newY+squareSizey, true)
+	var arrowHoveredLeft = point_in_rectangle(mouse_x, mouse_y, newX, newY, newX+squareSizex, newY+squareSizey)
+	var arrowHoveredRight = point_in_rectangle(mouse_x, mouse_y, newX + arrowDistance, newY, newX+squareSizex + arrowDistance, newY+squareSizey)
+	
+	if (arrowHoveredLeft){
+		leftArrowIndex = i
+		arrowSelected = 1
+		show_debug_message("arrow is left hovered")
+	}
+	
+	if (arrowHoveredRight){
+		rightArrowIndex = i
+		arrowSelected = 0
+		show_debug_message("arrow is right hovered")
+	}
+	
+	
 	//draw volume sliders
 	if(i <3){
 		var soundLevel = 0

@@ -6,6 +6,20 @@ if(selectedSettingIndex != 0 && moveUp()){
 if(selectedSettingIndex != array_length(settings)-1 && moveDown()){
 	selectedSettingIndex++
 }
+
+
+if(mouse_check_button_released(mb_left)){
+	
+	if(!arrowSelected)//right
+	{
+		settingActionsRight[selectedSettingIndex]()
+	} 
+	if(arrowSelected){
+		settingActionsLeft[selectedSettingIndex]()	
+	}
+	
+}
+
 if(settingsLeftInput()){
 	settingActionsLeft[selectedSettingIndex]()
 	save()

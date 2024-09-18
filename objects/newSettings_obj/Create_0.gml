@@ -14,6 +14,10 @@ containerWidth = sprite_get_width(settingsBkg_spr)
 trayWidth = sprite_get_width(settingTray_spr)
 trayHeight = sprite_get_height(settingTray_spr)
 
+leftArrowIndex = 0
+rightArrowIndex = 0
+arrowSelected = 0 //0 is right, 1 is left
+
 settingActionsLeft = [
 	function(){
 		show_debug_message("inside first action left")
