@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"lever_up_spr",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":73,
-  "bbox_left":0,
-  "bbox_right":57,
+  "bbox_left":-22,
+  "bbox_right":86,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
