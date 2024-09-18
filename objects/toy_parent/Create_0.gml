@@ -4,5 +4,5 @@
 
 droppingSound = ""
 
-
+self.isDestroyed = false
 

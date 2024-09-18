@@ -9,6 +9,7 @@ if (global.isPaused){
 
 //if at the end of the conveyor
 if (self.x >= 500 && !global.isPaused){
+	self.isDestroyed = true
 	self.sprite_index = wrapping_spr
 	image_blend = make_color_rgb(128, 128, 128)
 	if(droppingSound == ""){

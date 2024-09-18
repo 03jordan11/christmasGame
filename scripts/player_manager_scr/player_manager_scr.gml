@@ -72,7 +72,13 @@ function wrapPresent(player){
 function isToyBelow(player){
 	var toys = listToArray(global.toysOnBelt)
 	var toy = instance_position(player.x, player.y+120, toys)
-	return toy
+	
+	if(toy!= noone){
+		if(!toy.isDestroyed){
+			return toy
+		}
+	}
+	return noone
 }
 
 function playerMovement(player){
