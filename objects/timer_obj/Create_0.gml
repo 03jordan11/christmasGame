@@ -7,3 +7,5 @@ if(steam_initialised()){
 }
 var temp = steam_create_leaderboard("time", lb_sort_descending, lb_disp_numeric)
 show_debug_message(temp)
+
+global.score = 0
