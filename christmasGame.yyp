@@ -163,6 +163,7 @@
     {"id":{"name":"Obj_Steam_UGC_Subscribed","path":"objects/Obj_Steam_UGC_Subscribed/Obj_Steam_UGC_Subscribed.yy",},},
     {"id":{"name":"Obj_Steam_UGC","path":"objects/Obj_Steam_UGC/Obj_Steam_UGC.yy",},},
     {"id":{"name":"Obj_Steam","path":"objects/Obj_Steam/Obj_Steam.yy",},},
+    {"id":{"name":"leaderboard_obj","path":"objects/leaderboard_obj/leaderboard_obj.yy",},},
     {"id":{"name":"option_list_obj","path":"objects/option_list_obj/option_list_obj.yy",},},
     {"id":{"name":"pause_obj","path":"objects/pause_obj/pause_obj.yy",},},
     {"id":{"name":"present_obj","path":"objects/present_obj/present_obj.yy",},},

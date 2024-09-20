@@ -3,7 +3,7 @@
 cursor_sprite = cursor71
 
 load(global.saveFileName)
-menuOptions = ["Start", "Endless Mode", "Settings", "Exit"]
+menuOptions = ["Start", "Endless Mode", "Settings", "Leaderboards", "Exit"]
 
 if(canContinue()){
 	array_insert(menuOptions, 0, "Continue")
@@ -31,6 +31,9 @@ selectActions = [
 		instance_destroy(self)
 		instance_create_layer(0, 0, "Instances", newSettings_obj)
 		show_debug_message("Open settings menu")
+	},
+	function(){
+		leaderboard_obj.showLeaderboard = true
 	},
 	function(){
 		game_end()
