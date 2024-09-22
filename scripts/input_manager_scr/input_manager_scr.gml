@@ -23,7 +23,7 @@ function moveDown(){
 	return keyboard || dPad || thumbstick
 }
 function moveLeft(){
-	keyboard = keyboard_check(ord("A"))
+	keyboard = keyboard_check(ord("A")) || keyboard_check(vk_left)
 	dPad = gamepad_button_check(0, gp_padl)
 	thumbstick = gamepad_axis_value(0, gp_axislh) < -.5
 	return keyboard || dPad || thumbstick
@@ -34,7 +34,7 @@ function selecItemInput(){
 	return keyboard || controller
 }
 function moveRight(){
-	keyboard = keyboard_check(ord("D"))
+	keyboard = keyboard_check(ord("D")) || keyboard_check(vk_right)
 	dPad = gamepad_button_check(0, gp_padr)
 	thumbstick = gamepad_axis_value(0, gp_axislh) > .5
 	return keyboard || dPad || thumbstick

@@ -11,7 +11,7 @@ var rectY2=y+10
 var areaCheck = point_in_rectangle(elf_obj.x, elf_obj.y, rectX1, rectY1, rectX2, rectY2)
 
 
-if(areaCheck && global.showTips){
+if(areaCheck && global.showTips && image_alpha != 0){
 	var posX = x
 	var posY = y + sprite_height - 10;
 	var scaleX = .6
