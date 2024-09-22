@@ -4,7 +4,7 @@ startX = 0
 startY = 0
 selectedSettingIndex = 0
 textColor = c_white
-settings = ["Main Volume", "SFX Volume", "Music Volume", "Wrapping Type", "Fullscreen"]
+settings = ["Main Volume", "SFX Volume", "Music Volume", "Wrapping Type", "Fullscreen", "Tips"]
 
 titlePadding = 32
 optionPadding = 16
@@ -47,6 +47,9 @@ settingActionsLeft = [
 	function(){
 		global.fullscreen = !global.fullscreen
 		setFullscreen(global.fullscreen)
+	},
+	function(){
+		global.showTips = !global.showTips
 	}
 ]
 settingActionsRight = [
@@ -75,5 +78,8 @@ settingActionsRight = [
 	function(){
 		global.fullscreen = !global.fullscreen
 		setFullscreen(global.fullscreen)
+	},
+	function(){
+		global.showTips = !global.showTips
 	}
 ]

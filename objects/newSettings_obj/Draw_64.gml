@@ -135,6 +135,16 @@ for(var i = 0; i < array_length(settings); i++){
 			draw_text(selXPos, textPosY, "Off")	
 		}
 	}
+	if(i==5){
+		if(global.showTips){
+			var selXPos = volumePosX + 250 - string_width("On")/2
+			draw_text(selXPos, textPosY, "On")	
+		}
+		else{
+			var selXPos = volumePosX + 250 - string_width("Off")/2
+			draw_text(selXPos, textPosY, "Off")	
+		}
+	}
 }
 
 var botX = 1000

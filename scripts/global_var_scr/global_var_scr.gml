@@ -1,6 +1,6 @@
 //global.environment = "TEST"
 global.environment = "PROD"
-
+global.showTips = true
 //initializes global variables
 global.saveFileName = "save_file.json"
 global.showText = true
