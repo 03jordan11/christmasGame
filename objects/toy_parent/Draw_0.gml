@@ -23,3 +23,5 @@ if(areaCheck && global.showTips){
 	draw_sprite(Space_Key, 0, posX + 30, posY)
 }
 
+
+
