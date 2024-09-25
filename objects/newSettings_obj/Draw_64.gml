@@ -9,11 +9,11 @@ draw_sprite(settingsBkg_spr, 0, startX, startY)
 
 //draw Settings title
 var containerCenter = containerWidth/2
-var titleTextPosX = containerCenter - string_width("Settings")/2 
-var titleTextPosY = 64
+var titleTextPosX = containerCenter - (string_width("Settings")*.8)/2 
+var titleTextPosY = 14
 draw_set_font(ARCO_main_menu_font)
 draw_set_color(textColor)
-draw_text(400, 22, "Settings")
+draw_text_transformed(465, 2, "Settings", .7, .7, 0)
 
 
 draw_set_font(mainMenu_font)
@@ -62,13 +62,13 @@ for(var i = 0; i < array_length(settings); i++){
 	if (arrowHoveredLeft){
 		leftArrowIndex = i
 		arrowSelected = 1
-		show_debug_message("arrow is left hovered")
+		//show_debug_message("arrow is left hovered")
 	}
 	
 	if (arrowHoveredRight){
 		rightArrowIndex = i
 		arrowSelected = 0
-		show_debug_message("arrow is right hovered")
+		//show_debug_message("arrow is right hovered")
 	}
 	
 	
@@ -154,3 +154,9 @@ draw_sprite(settingsBtnBkg_spr, 0, botX-40, botY)
 draw_sprite(Esc_Key, 0, botX-30, botY+6)
 draw_sprite(xbox_b_32x32, 0, botX+12, botY+7)
 draw_text_color(botX + 50, botY + 8, "Back", c_black, c_black, c_black, c_black, 1)
+
+backButtonHovered = point_in_rectangle(mouse_x, mouse_y, botX-40, botY, botX-40 + sprite_get_width(settingsBtnBkg_spr), botY + sprite_get_height(settingsBtnBkg_spr))
+
+if(backButtonHovered){
+	selectedSettingIndex = -1	
+}

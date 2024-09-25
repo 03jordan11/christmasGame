@@ -10,7 +10,6 @@ if(canContinue()){
 }
 selectedIndex = 0
 
-
 #region drawing
 startX = 190
 startY = 220
