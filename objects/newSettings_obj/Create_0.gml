@@ -18,6 +18,8 @@ leftArrowIndex = 0
 rightArrowIndex = 0
 arrowSelected = 0 //0 is right, 1 is left
 
+backButtonHovered = false
+
 settingActionsLeft = [
 	function(){
 		show_debug_message("inside first action left")
@@ -54,8 +56,12 @@ settingActionsLeft = [
 ]
 settingActionsRight = [
 	function(){
+		show_debug_message("inside first action right")
+
 		if(global.masterVol != 100){
+			show_debug_message("inside if check")
 			global.masterVol += 10
+			show_debug_message($"set new masterVol to {global.masterVol}")
 		}
 	},
 	function(){
