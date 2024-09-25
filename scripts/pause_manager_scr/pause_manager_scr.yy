@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"pause_manager_scr",
   "isCompatibility":false,
   "isDnD":false,

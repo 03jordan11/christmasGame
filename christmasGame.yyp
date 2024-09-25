@@ -73,7 +73,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"christmasGame",
   "resources":[
@@ -92,6 +92,7 @@
     {"id":{"name":"elf_obj","path":"objects/elf_obj/elf_obj.yy",},},
     {"id":{"name":"endless_mode_text_obj","path":"objects/endless_mode_text_obj/endless_mode_text_obj.yy",},},
     {"id":{"name":"exit_game_text_obj","path":"objects/exit_game_text_obj/exit_game_text_obj.yy",},},
+    {"id":{"name":"leaderboard_obj","path":"objects/leaderboard_obj/leaderboard_obj.yy",},},
     {"id":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},},
     {"id":{"name":"main_menu_load_save_obj","path":"objects/main_menu_load_save_obj/main_menu_load_save_obj.yy",},},
     {"id":{"name":"main_menu_options_parent_obj","path":"objects/main_menu_options_parent_obj/main_menu_options_parent_obj.yy",},},
@@ -163,7 +164,6 @@
     {"id":{"name":"Obj_Steam_UGC_Subscribed","path":"objects/Obj_Steam_UGC_Subscribed/Obj_Steam_UGC_Subscribed.yy",},},
     {"id":{"name":"Obj_Steam_UGC","path":"objects/Obj_Steam_UGC/Obj_Steam_UGC.yy",},},
     {"id":{"name":"Obj_Steam","path":"objects/Obj_Steam/Obj_Steam.yy",},},
-    {"id":{"name":"leaderboard_obj","path":"objects/leaderboard_obj/leaderboard_obj.yy",},},
     {"id":{"name":"option_list_obj","path":"objects/option_list_obj/option_list_obj.yy",},},
     {"id":{"name":"pause_obj","path":"objects/pause_obj/pause_obj.yy",},},
     {"id":{"name":"present_obj","path":"objects/present_obj/present_obj.yy",},},
