@@ -62,6 +62,7 @@
     {"name":"fnt_gm_30","order":2,"path":"fonts/fnt_gm_30/fnt_gm_30.yy",},
     {"name":"mainMenu_font","order":4,"path":"fonts/mainMenu_font/mainMenu_font.yy",},
     {"name":"settingsOptions_font","order":5,"path":"fonts/settingsOptions_font/settingsOptions_font.yy",},
+    {"name":"coco_obj","order":4,"path":"objects/coco_obj/coco_obj.yy",},
     {"name":"continue_text_obj","order":5,"path":"objects/continue_text_obj/continue_text_obj.yy",},
     {"name":"conveyer_obj","order":2,"path":"objects/conveyer_obj/conveyer_obj.yy",},
     {"name":"endless_mode_text_obj","order":4,"path":"objects/endless_mode_text_obj/endless_mode_text_obj.yy",},

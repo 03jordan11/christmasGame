@@ -26,8 +26,6 @@ function load(fileName){
 		var fileStr = file_text_read_string(file)
 		var data = json_parse(fileStr)
 	
-	
-		// FIX ME BEFORE PUSHING
 		global.currentLevel = data.level
 		global.highestScore = data.storyHighScore
 		global.endlessHighScore = data.endlessHighScore

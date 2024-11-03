@@ -86,6 +86,7 @@
     {"id":{"name":"fnt_gm_30","path":"fonts/fnt_gm_30/fnt_gm_30.yy",},},
     {"id":{"name":"mainMenu_font","path":"fonts/mainMenu_font/mainMenu_font.yy",},},
     {"id":{"name":"settingsOptions_font","path":"fonts/settingsOptions_font/settingsOptions_font.yy",},},
+    {"id":{"name":"coco_obj","path":"objects/coco_obj/coco_obj.yy",},},
     {"id":{"name":"continue_text_obj","path":"objects/continue_text_obj/continue_text_obj.yy",},},
     {"id":{"name":"conveyer_obj","path":"objects/conveyer_obj/conveyer_obj.yy",},},
     {"id":{"name":"elf_obj","path":"objects/elf_obj/elf_obj.yy",},},
