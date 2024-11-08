@@ -3,4 +3,6 @@
 
 if(backInput()){
 	showLeaderboard = false
+	with (id)
+		instance_destroy()
 }

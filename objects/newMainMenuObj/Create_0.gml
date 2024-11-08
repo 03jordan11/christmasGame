@@ -32,7 +32,7 @@ selectActions = [
 		show_debug_message("Open settings menu")
 	},
 	function(){
-		leaderboard_obj.showLeaderboard = true
+		instance_create_layer(0,0, "Leaderboard", leaderboard_obj)
 	},
 	function(){
 		game_end()
