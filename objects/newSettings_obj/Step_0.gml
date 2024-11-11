@@ -10,12 +10,14 @@ if(selectedSettingIndex != array_length(settings)-1 && moveDown()){
 }
 
 if(mouse_check_button_released(mb_left)){
+	global.usingController = false
 	if(backButtonHovered){
 		returnFromSettings()
 	}
 }
 
 if(mouse_check_button_pressed(mb_left) && selectedSettingIndex >= 0){
+	global.usingController = false
 	if(!arrowSelected)//right
 	{
 		settingActionsRight[selectedSettingIndex]()

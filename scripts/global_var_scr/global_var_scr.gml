@@ -55,9 +55,13 @@ global.spriteSpeed = 10
 
 global.toysOnBelt = ds_list_create()
 
-//strings
+//layers
 
 global.settingsMenuIsOpen = false
+global.mainMenuOptionsEnabled = true
+
+//strings
+
 global.mainMenuStartText = "Start"
 global.mainMenuSettingsText = "Settings"
 global.mainMenuExitText = "Exit"
@@ -79,3 +83,7 @@ global.day1 = "ACH_DAY_1"
 global.oneThousand = "ACH_1000"
 global.tenThousand = "ACH_10000"
 global.endless = "ACH_ENDLESS_MODE"
+
+//inputs
+
+global.usingController = false

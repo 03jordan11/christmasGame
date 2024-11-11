@@ -18,7 +18,6 @@ padding = 16
 
 selectActions = [
 	function () {
-		
 		global.currentLevel = 1
 		room_goto(SantasWorkshop)
 	},

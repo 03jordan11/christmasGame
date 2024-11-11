@@ -9,8 +9,12 @@ if(global.showTips && global.cocoIsReady){
 	var scaleX = .6
 	var scaleY = .6
 
-	draw_sprite_ext(button_xbox_digital_y_4, 0, posX-20, posY, scaleX, scaleY, 0, c_white, 1)
-	draw_set_font(settingsOptions_font)
-	draw_text_ext_transformed_color(posX+20, posY+4, "|", 1, 500, 1, 1, 0, c_black,c_black,c_black,c_black, 1)
-	draw_sprite(X_Key, 0, posX + 30, posY+5)
+	if(global.usingController){
+		draw_sprite_ext(button_xbox_digital_y_4, 0, posX-2, posY, scaleX, scaleY, 0, c_white, 1)
+	} else {
+		draw_sprite(X_Key, 0, posX, posY+5)
+	}
+
+	//draw_set_font(settingsOptions_font)
+	//draw_text_ext_transformed_color(posX+20, posY+4, "|", 1, 500, 1, 1, 0, c_black,c_black,c_black,c_black, 1)
 }

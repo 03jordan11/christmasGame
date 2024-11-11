@@ -16,9 +16,14 @@ if(areaCheck && global.showTips && image_alpha != 0){
 	var posY = y + sprite_height - 10;
 	var scaleX = .6
 	var scaleY = .6
-	draw_set_font(settingsOptions_font)
-	draw_sprite_ext(button_xbox_digital_x_4, 0, posX-20, posY, scaleX, scaleY, 0, c_white, 1)
+	
+	if (global.usingController) {
+		draw_sprite_ext(button_xbox_digital_x_4, 0, posX + 8, posY, scaleX, scaleY, 0, c_white, 1)
+	} else {
+		draw_sprite(E_Key, 0, posX + 8, posY+5)
+	}
+	
+	//draw_set_font(settingsOptions_font)
 	//draw_text(posX, posY, "/")
-	draw_text_ext_transformed_color(posX+20, posY, "|", 1, 500, 1.5, 1.5, 0, c_black,c_black,c_black,c_black, 1)
-	draw_sprite(E_Key, 0, posX + 30, posY+5)
+	//draw_text_ext_transformed_color(posX+20, posY, "|", 1, 500, 1.5, 1.5, 0, c_black,c_black,c_black,c_black, 1)
 }

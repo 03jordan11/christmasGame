@@ -8,7 +8,8 @@ var asyncId = ds_map_find_value(async_load, "id")
 		var entries = json_parse(entriesJson)
 		leaderboard = entries.entries
 		refresh_leaderboard()
-	}else if(asyncId == userScoreRequestId){
+	}
+	else if(asyncId == userScoreRequestId){
 		var entriesJson = ds_map_find_value(async_load, "entries")
 		var entries = json_parse(entriesJson)
 		yourLeaderboard = entries.entries

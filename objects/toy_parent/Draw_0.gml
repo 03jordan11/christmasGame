@@ -17,10 +17,15 @@ if(areaCheck && global.showTips){
 	var scaleX = .6
 	var scaleY = .6
 	draw_set_font(settingsOptions_font)
-	draw_sprite_ext(button_xbox_digital_a_4, 0, posX-20, posY, scaleX, scaleY, 0, c_white, 1)
+	
+	if(global.usingController){
+		draw_sprite_ext(button_xbox_digital_a_4, 0, posX + 10, posY, scaleX, scaleY, 0, c_white, 1)
+	} else {
+		draw_sprite(Space_Key, 0, posX, posY)
+	}
+
 	//draw_text(posX, posY, "/")
-	draw_text_ext_transformed_color(posX+20, posY, "|", 1, 500, 1.5, 1.5, 0, c_black,c_black,c_black,c_black, 1)
-	draw_sprite(Space_Key, 0, posX + 30, posY)
+	//draw_text_ext_transformed_color(posX+20, posY, "|", 1, 500, 1.5, 1.5, 0, c_black,c_black,c_black,c_black, 1)
 }
 
 

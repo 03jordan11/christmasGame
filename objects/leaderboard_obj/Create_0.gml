@@ -5,8 +5,30 @@ yourLeaderboard = []
 scoresRequestId = steam_download_scores("time", 1, 10)
 userScoreRequestId = steam_download_scores_around_user("time", 0, 0)
 
+global.mainMenuOptionsEnabled = false;
+
+//show_debug_message($"Leaderboard object created, mainMenuOptionsEnabled: {global.mainMenuOptionsEnabled}")
+
+n_root = undefined
+
+created_instances = []
 
 function refresh_leaderboard(){
+	show_debug_message("Leaderboard refreshing...")
+	//show_debug_message($"leaderboard length: {array_length(leaderboard)}, yourLeaderboard length: {array_length(yourLeaderboard)}")
+	
+	if(!is_undefined(n_root) && n_root != noone){
+		flexpanel_delete_node(n_root, true)
+	}
+	
+	for (var i = 0; i < array_length(created_instances); i++) {
+	    if (instance_exists(created_instances[i])) {
+	        instance_destroy(created_instances[i])
+	    }
+	}
+	
+	created_instances = []
+	
 	_title_node = flexpanel_create_node({
 		name: "title_node",
 		width: "105%",
@@ -135,7 +157,6 @@ function refresh_leaderboard(){
 		flexpanel_node_insert_child(_leaderboard_container, _leaderboard_column, i)
 	}
 
-
 	n_root = flexpanel_create_node({
 		name: "root",
 		alignItems: "center",
@@ -147,16 +168,20 @@ function refresh_leaderboard(){
 	})
 
 	flexpanel_node_insert_child(n_root, _title_node, 0)
-	flexpanel_node_insert_child(n_root, _your_score_node, 1)
-	flexpanel_node_insert_child(n_root, _leaderboard_container, 2)
+	
+	// If the user doesn't have a leaderboard entry, skip the "your score" node
+	if(array_length(yourLeaderboard) > 0){
+		flexpanel_node_insert_child(n_root, _your_score_node, 1)
+		flexpanel_node_insert_child(n_root, _leaderboard_container, 2)
+	} else {
+		flexpanel_node_insert_child(n_root, _leaderboard_container, 1)
+	}
+	
 
 	target_w = room_width;
 	target_h = room_height;
 
 	flexpanel_calculate_layout(n_root, target_w, target_h, flexpanel_direction.LTR);
-	
-	//show_debug_message("Leaderboard refreshed.")
-	//show_debug_message(array_length(leaderboard))
 	
 	generate_instance(n_root, 0);
 }
@@ -189,7 +214,7 @@ function create_leaderboard_entry(index){
 				width: 150,
 				height: "auto",
 				data: {
-					text: leaderboard[index].score	
+					text: leaderboard[index].score
 				}
 			}
 		]
@@ -211,12 +236,14 @@ generate_instance = function(_node, _depth) {
     //show_debug_message("Node: " + string(_name) + " | Position: (" + string(_pos.left) + ", " + string(_pos.top) + ") | Size: (" + string(_pos.width) + ", " + string(_pos.height) + ")");
 
     // Create instance
-    instance_create_depth(_pos.left, _pos.top, _depth, leaderboard_obj_element, {
+    var new_instance = instance_create_depth(_pos.left, _pos.top, _depth, leaderboard_obj_element, {
         name: _name,
         width: _pos.width,
         height: _pos.height,
         text: _text
     });
+	
+	array_push(created_instances, new_instance)
     
     // Call for children (recursive)
     var _children_count = flexpanel_node_get_num_children(_node);
