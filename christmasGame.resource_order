@@ -67,6 +67,7 @@
     {"name":"conveyer_obj","order":2,"path":"objects/conveyer_obj/conveyer_obj.yy",},
     {"name":"endless_mode_text_obj","order":4,"path":"objects/endless_mode_text_obj/endless_mode_text_obj.yy",},
     {"name":"exit_game_text_obj","order":2,"path":"objects/exit_game_text_obj/exit_game_text_obj.yy",},
+    {"name":"leaderboard_obj_element","order":9,"path":"objects/leaderboard_obj_element/leaderboard_obj_element.yy",},
     {"name":"leaderboard_obj","order":8,"path":"objects/leaderboard_obj/leaderboard_obj.yy",},
     {"name":"lever_obj","order":3,"path":"objects/lever_obj/lever_obj.yy",},
     {"name":"main_menu_load_save_obj","order":6,"path":"objects/main_menu_load_save_obj/main_menu_load_save_obj.yy",},

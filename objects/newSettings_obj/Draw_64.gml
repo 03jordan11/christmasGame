@@ -151,8 +151,13 @@ var botX = 1000
 var botY = 660
 
 draw_sprite(settingsBtnBkg_spr, 0, botX-40, botY)
-draw_sprite(Esc_Key, 0, botX-30, botY+6)
-draw_sprite(xbox_b_32x32, 0, botX+12, botY+7)
+
+if(global.usingController){
+	draw_sprite(xbox_b_32x32, 0, botX, botY+7)
+}else{
+	draw_sprite(Esc_Key, 0, botX, botY+6)
+}
+
 draw_text_color(botX + 50, botY + 8, "Back", c_black, c_black, c_black, c_black, 1)
 
 backButtonHovered = point_in_rectangle(mouse_x, mouse_y, botX-40, botY, botX-40 + sprite_get_width(settingsBtnBkg_spr), botY + sprite_get_height(settingsBtnBkg_spr))

@@ -92,6 +92,7 @@
     {"id":{"name":"elf_obj","path":"objects/elf_obj/elf_obj.yy",},},
     {"id":{"name":"endless_mode_text_obj","path":"objects/endless_mode_text_obj/endless_mode_text_obj.yy",},},
     {"id":{"name":"exit_game_text_obj","path":"objects/exit_game_text_obj/exit_game_text_obj.yy",},},
+    {"id":{"name":"leaderboard_obj_element","path":"objects/leaderboard_obj_element/leaderboard_obj_element.yy",},},
     {"id":{"name":"leaderboard_obj","path":"objects/leaderboard_obj/leaderboard_obj.yy",},},
     {"id":{"name":"lever_obj","path":"objects/lever_obj/lever_obj.yy",},},
     {"id":{"name":"main_menu_load_save_obj","path":"objects/main_menu_load_save_obj/main_menu_load_save_obj.yy",},},

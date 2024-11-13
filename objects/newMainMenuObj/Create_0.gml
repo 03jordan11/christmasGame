@@ -18,7 +18,6 @@ padding = 16
 
 selectActions = [
 	function () {
-		
 		global.currentLevel = 1
 		room_goto(SantasWorkshop)
 	},
@@ -32,7 +31,7 @@ selectActions = [
 		show_debug_message("Open settings menu")
 	},
 	function(){
-		leaderboard_obj.showLeaderboard = true
+		instance_create_layer(0,0, "Leaderboard", leaderboard_obj)
 	},
 	function(){
 		game_end()

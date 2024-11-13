@@ -8,5 +8,8 @@ if(selectedIndex != array_length(menuOptions)-1 && moveDown()){
 	selectedIndex++
 }
 if(menuSelectInput()){
-	selectActions[selectedIndex]()
+	//show_debug_message($"menu select input activated, mainMenuOptionsEnabled = {global.mainMenuOptionsEnabled}")
+	if(global.mainMenuOptionsEnabled){
+		selectActions[selectedIndex]()
+	}
 }
